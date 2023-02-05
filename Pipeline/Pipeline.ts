@@ -1,6 +1,8 @@
 import { IRequestMiddlewaresRecord } from "./core/MethodMiddleware.interface";
 import { ErrorMiddleware, Middleware } from "./core/Middleware.types";
 import { IncomingMessage, ServerResponse, Server, createServer } from "http";
+import { httpErrorMiddleware } from "./core/middleware/default-error-middleware";
+import createHttpError from "http-errors";
 
 export class PipelineServer {
   constructor(server?: Server) {
@@ -17,7 +19,7 @@ export class PipelineServer {
   }
 
   private middlewares: Middleware[] = [];
-  private errorMiddlewares: ErrorMiddleware[] = [];
+  private errorMiddlewares: ErrorMiddleware[] = [httpErrorMiddleware]; // un middleware di default che viene rimosso quando io ne aggiungo uno
   private server!: Server;
   private methodMiddlewares: IRequestMiddlewaresRecord = {
     get: new Map(),
@@ -38,13 +40,14 @@ export class PipelineServer {
     await this.execMiddlewares(request, response, this.middlewares); //eseguo tutti i middleware che fanno il parse del body etc..
     try {
       if (!(REQUEST_METHOD in this.methodMiddlewares)) {
-        throw new Error(`${REQUEST_METHOD} not in server`);
+        throw createHttpError.BadRequest(`${REQUEST_METHOD} not in server`)
+
       }
 
       const methodUrlMiddlewareMap = this.methodMiddlewares[REQUEST_METHOD]; //questa è una mappa con url:middlewares
 
       if (!methodUrlMiddlewareMap.has(REQUEST_URL)) {
-        throw new Error(`No ${REQUEST_URL} for method ${REQUEST_METHOD}`);
+        throw createHttpError.BadRequest(`No ${REQUEST_URL} for method ${REQUEST_METHOD}`)
       }
 
       const middlewaresForUrlAndMethod =

@@ -6,16 +6,20 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev": "tsnd --respawn server.ts --debug --files",
+    "start:dev": "tsnd --respawn --debug --files server.ts ",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/http-errors": "^2.0.1",
+    "@types/lodash": "^4.14.191",
+    "@types/node": "^18.11.19",
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
-    "http-errors": "^2.0.0"
+    "http-errors": "^2.0.0",
+    "lodash": "^4.17.21"
   }
 }
