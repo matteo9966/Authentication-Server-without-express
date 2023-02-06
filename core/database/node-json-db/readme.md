@@ -1,0 +1,1 @@
+# this is just a temporary solution to store users and data in memory using a simple file like database called node-json-db

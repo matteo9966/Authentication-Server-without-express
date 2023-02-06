@@ -1,0 +1,21 @@
+{
+    "user": {
+        "riz8jbd3amj": {
+            "email": "m@t.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$smYYjxGV104jLtraolGhkA$/UCqXilWwIet2I/cMxFcMotqHUig1r66ZS0C3aO1Css",
+            "id": "riz8jbd3amj",
+            "roles": [
+                "USER"
+            ]
+        },
+        "ii55mz0dovi": {
+            "email": "p@gonoi.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$8BIT7dbeoeMaw+DVrbX/gA$AYT4GWK/Ws3aAk/5yNrNDZig1bSnW92q0BoB0p1aQhw",
+            "id": "ii55mz0dovi",
+            "roles": [
+                "USER"
+            ],
+            "username": "paolo"
+        }
+    }
+}

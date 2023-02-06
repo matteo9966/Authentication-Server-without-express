@@ -14,6 +14,3 @@ export function validatePassword(password:string){
 }
 
 
-console.log('Dogo123',validatePassword('Dogo123'))
-console.log('Gato',validatePassword('Gato1234'))
-console.log('rino',validatePassword('rino'))

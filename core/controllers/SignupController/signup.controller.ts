@@ -4,6 +4,9 @@ import createHttpError from "http-errors";
 import { validatePassword } from "../../utils/validatePassword";
 import _ from "lodash";
 import { IUserLogin } from "../../models/UserLogin.interface";
+import { hashPassword } from "../../utils/hashPassword";
+import { dbConnection } from "../../database.connection";
+import { DbUser } from "../../models/DbUser.interface";
 export const signupUserController: Middleware = async (request, response) => {
   const userSignup: IUserSignup = request.body as IUserSignup;
   if (
@@ -37,11 +40,25 @@ export const signupUserController: Middleware = async (request, response) => {
     username:userSignup.username
   } 
 
+  //salvo user con il suo salt nel database:
+
   //TODO: email esiste già
   //TODO: formato email non valido
 
-  
-  
+  const digest = await hashPassword(userSignup.password);
+  const dbUser:DbUser = {
+    email:userSignup.email,
+    passwordDigest:digest,
+    id:newUser.id,
+    roles:newUser.roles,
+    username:newUser.username
+  } 
+  try {
+      await dbConnection.createUser(dbUser)
+    
+  } catch (error) {
+    console.log(error);
+  }
 
   response.json(newUser)
 

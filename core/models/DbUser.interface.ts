@@ -1,7 +1,8 @@
 
 export interface DbUser {
-    id:number;
+    id:string;
     email:string;
     passwordDigest:string,
-    roles: string[]
+    roles: string[],
+    username:string,
 }
