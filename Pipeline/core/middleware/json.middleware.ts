@@ -27,6 +27,7 @@ const stringifyData= (data:Record<string,any>|string)=>{
 export const jsonMiddleWare: Middleware = async (request, response) => {
   let chunks: Buffer[] = [];
 const json = (data:Record<string,any>|string)=>{
+  console.log('[JSON MIDDLEWARE]',data);
     const stringified = stringifyData(data);
     if(stringified===null){
         //che faccio?

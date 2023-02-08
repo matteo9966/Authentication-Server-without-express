@@ -11,4 +11,10 @@ export class DatabaseFacade {
     async createUser(user:DbUser){
         await this.db.saveUser(user);
     }
+
+    async findUserByEmail(email:string){
+        return this.db.getUserByEmail(email);
+    }
+
+    
 }

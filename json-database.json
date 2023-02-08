@@ -16,6 +16,33 @@
                 "USER"
             ],
             "username": "paolo"
+        },
+        "m@t.it": {
+            "email": "m@t.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$HT+/Z1xAdGpUOJi7dq9jsA$Xa3iGTB439AHKzoS1Rbtnz/fP9ttNCArhb6mibjypOM",
+            "id": "w2k8j0e9dii",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo2"
+        },
+        "m@t.logo.it": {
+            "email": "m@t.logo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$mYYZh5mCFxRTgBJUUrM3mQ$CvDwDvBeBxOFVuCx+ivSM68vt9Z3Btguf4BmIeM1ihs",
+            "id": "ww7ruezekdk",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@t.logo1.it": {
+            "email": "m@t.logo1.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$bUCs3kqCE7vdx6MZl7dC2g$aRIjw+LhqOhv0PQAdxj83cE71cigesko1vtufU8Wi18",
+            "id": "k43g69oxrhr",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
         }
     }
 }

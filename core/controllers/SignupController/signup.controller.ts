@@ -5,8 +5,10 @@ import { validatePassword } from "../../utils/validatePassword";
 import _ from "lodash";
 import { IUserLogin } from "../../models/UserLogin.interface";
 import { hashPassword } from "../../utils/hashPassword";
-import { dbConnection } from "../../database.connection";
+import { dbConnection } from "../../database/database.connection";
 import { DbUser } from "../../models/DbUser.interface";
+import { validateEmail } from "../../utils/validateEmail";
+import { sessionManager } from "../../models/classes/Sessions.class";
 export const signupUserController: Middleware = async (request, response) => {
   const userSignup: IUserSignup = request.body as IUserSignup;
   if (
@@ -33,6 +35,13 @@ export const signupUserController: Middleware = async (request, response) => {
     throw createHttpError.BadRequest(errorMessage);
   }
 
+  const validEmailErrors = await validateEmail(userSignup.email);
+
+  if(validEmailErrors?.length>0){
+    const error = validEmailErrors.join('\r\n').trim()
+    throw createHttpError.BadRequest(error);
+  }
+
   const newUser:IUserLogin = {
     email:userSignup.email,
     id:Math.random().toString(36).slice(2),
@@ -42,8 +51,7 @@ export const signupUserController: Middleware = async (request, response) => {
 
   //salvo user con il suo salt nel database:
 
-  //TODO: email esiste già
-  //TODO: formato email non valido
+
 
   const digest = await hashPassword(userSignup.password);
   const dbUser:DbUser = {
@@ -60,6 +68,16 @@ export const signupUserController: Middleware = async (request, response) => {
     console.log(error);
   }
 
+  const userLogin:IUserLogin = {
+    email:dbUser.email,
+    id:dbUser.id,
+    roles:dbUser.roles,
+    username:dbUser.username
+
+  }
+
+  const session = await sessionManager.createSession(userLogin)
+  response.cookie('SESSION_ID',session.sessionid)
   response.json(newUser)
 
 };

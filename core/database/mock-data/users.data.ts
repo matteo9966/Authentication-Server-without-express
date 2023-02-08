@@ -14,7 +14,7 @@ export const USERS: { [key: number]: DbUser } = {
         email: 'admin@gmail.com',
         // normal user (password is Password10), does not have access to login as another user functionality
         passwordDigest: '$argon2i$v=19$m=4096,t=3,p=1$vfrhde0OMBNSSE9rRWtVrQ$gBaNgJFPBZfzuvrzfX8iSr2+OCD8K8Iu/JjwpYp8/TY',
-        roles: ['STUDENT', 'ADMIN'],
+        roles: ['USER', 'ADMIN'],
         username:"2adminGOD"
     }
 };

@@ -3,7 +3,7 @@ import { LESSONS } from "./mock-data/lessons.data";
 import { USERS } from "./mock-data/users.data";
 import { DbUser } from "../models/DbUser.interface";
 import { DbLesson } from "../models/DbLesson.interface";
-
+//TODO: rimuovere questo database e usaere solo il databasefacade
 export class Database {
   async readAllLessons() {
     return _.values(LESSONS);

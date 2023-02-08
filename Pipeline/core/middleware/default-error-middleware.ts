@@ -4,7 +4,7 @@ import createHttpError from "http-errors";
 //     //
 // }
 
-//TODO INVECE DI USARE QUESTE CLASSI USA LA LIBRERIA CREATE ERRROR
+//todo do something
 
 export const httpErrorMiddleware: ErrorMiddleware = async (
   error,
