@@ -20,7 +20,7 @@ export class PipelineServer {
 
   private middlewares: Middleware[] = [];
   private errorMiddlewares: ErrorMiddleware[] = [httpErrorMiddleware]; // un middleware di default che viene rimosso quando io ne aggiungo uno
-  private server!: Server;
+  public server!: Server;
   private methodMiddlewares: IRequestMiddlewaresRecord = {
     get: new Map(),
     post: new Map(),

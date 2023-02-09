@@ -43,6 +43,195 @@
                 "USER"
             ],
             "username": "matto"
+        },
+        "mi@t.it": {
+            "email": "mi@t.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$S0Sj3x7FAxmj9ZquCPAMQA$ReQ00zWAkiQrwUYPHDpk6NgivG42cifqxR+In8klHfU",
+            "id": "j1r36wgkfmd",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo2"
+        },
+        "m@te.logo.it": {
+            "email": "m@te.logo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$lZRkAy4VSWkQfgNDi4DFrQ$13BCKRhNuGK5bQty9Gz0nC7tnyL1dBJPCrCTUtr+pUg",
+            "id": "w0wps31rtll",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "mi@ta.it": {
+            "email": "mi@ta.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$NAr1bGf6gTAH2HQvnyd6cQ$9+OQTG7FOsMoBbd2ufzLMXLG4rw4PrswWz+OLKsMqic",
+            "id": "v3krl6y5a3",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo2"
+        },
+        "ma@te.logo.it": {
+            "email": "ma@te.logo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$DYLVZPxJxkDsy6LjmI1cCw$ykrwNy+QelwtxhfdygCXwEPJ2lX7cImBM7Rh2PfqPEI",
+            "id": "0mt5ptmp14us",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "ma@te.logdo.it": {
+            "email": "ma@te.logdo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$LZdobK8jEaKRED0EebmIxw$jiMa8udnSgY2qLx+6Q4az8oYJGMS2ZgqOCsvUY/RxPQ",
+            "id": "il6kucf2x9",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@et.it": {
+            "email": "m@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$msGZ211K6e3e/yk9PrkqZw$i3W608gmkTxYZ+ci6IwetO42DIepZFT7d1f892aq4J4",
+            "id": "q7e91sjlr9f",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "ma@et.it": {
+            "email": "ma@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$ac1K3a9f6NUUfKrwJPjrDg$WS/OwxrOBRYNxSp5HRwc1jmMF7P/8rHxSZOP0SZ/tbE",
+            "id": "gp6o44v8r1g",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "madd@et.it": {
+            "email": "madd@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$aTtL44JN2aYFTtu2BWqCgg$nOfd9p3THET+YChFLQf6zRKlS0FRSEc0dFbqbhfSa6I",
+            "id": "7k7mky36yig",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "maddd@et.it": {
+            "email": "maddd@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$w88iqaOo/23kUUFUo4ouOw$0Qoapz8GMIcA7yinP5CXZKP3veafcak4cLMxylg2cAo",
+            "id": "bdy85vollr5",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "madddd@et.it": {
+            "email": "madddd@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$1aekZS5Y85L5PhNVASKMrA$DXR+YcJpQRXyPQMKzRCGf9ddzI3NpMrzFyG2TafXYnQ",
+            "id": "emxtdu2im0i",
+            "roles": [
+                "USER"
+            ],
+            "username": "mattos"
+        },
+        "m@aaa.it": {
+            "email": "m@aaa.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$IkaoJRO6DcYW0x0C3iku6w$uEWIsLTCovY4ZpxNG8IREGSx+CJdHo5+qLOEnlf4ZQc",
+            "id": "ydk0ikiqh1",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo"
+        },
+        "maddadd@et.it": {
+            "email": "maddadd@et.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$C+5UYR/OjRvejxSQ6nbELQ$KyuyfVkaPv8NqnsN7hN2bPSheSMS9hVWTuzzbys5/D8",
+            "id": "hz9zis3ekq5",
+            "roles": [
+                "USER"
+            ],
+            "username": "mattos"
+        },
+        "m@tl.it": {
+            "email": "m@tl.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$OzrNaIrzTLAYZ9+4AMr3vw$yfNf9/ZmcdxUzzKUKB8tJAVu6EdIWbUJaANJeMFWgIo",
+            "id": "9nhiaiy93aa",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@ogo.it": {
+            "email": "m@ogo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$VMROqZuhIlicMBCTqenFgQ$/PpflZX4oK7g6gqLfvr/ZdPgHr3mpSLStuKjMa5lPRM",
+            "id": "n6b79ed3i1n",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@t.lo7go.it": {
+            "email": "m@t.lo7go.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$8rbG/3mpX/fx2phTFsBhXg$MIwZ6EPyA0ycQ78CVWfkbzRDc7baJ0xLySUj3O5mIxc",
+            "id": "lfrx0pvsrrb",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@at.lo7go.it": {
+            "email": "m@at.lo7go.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$TC9mZhKfcJLaKiTWo29tkg$ked3rKG6PtSbP601pAezw9uKlDCxm1XwZUNqgI4FyRU",
+            "id": "udplnwqidwk",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@at.lo7go5.it": {
+            "email": "m@at.lo7go5.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$D3aIOvs1NhRPiJr4FH7mfQ$+V6b75LNg6uLctK0I6fMBmAvfN4hJu6bwKqigdLSYRc",
+            "id": "wi6lppj2jdh",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "m@t.logo": {
+            "email": "m@t.logo",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$fGr7sjb7rNQWTb5ypWDdGQ$25LRKFNGRs3Z8YYfLGFGrzlGGJ22Lrg0OnQucTbCIII",
+            "id": "jm7o161xrm",
+            "roles": [
+                "USER"
+            ],
+            "username": "mattos"
+        },
+        "ms@t.logo.it": {
+            "email": "ms@t.logo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$ZpfEglcpH+ofDbucSJD4uA$qRajCLM5knAKP8jTmHjpY66VjTqo2pyrBo6dI4kE9CU",
+            "id": "borf36xacc7",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo"
+        },
+        "m@t.logao.it": {
+            "email": "m@t.logao.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$VBfHPnNXrKT3htXQ3ZXRzQ$kZJhZSTkHEOCTJNe1HbqMIvMXSVoh8RiAjI26LPREuM",
+            "id": "mc2x04a6b4c",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteoa"
+        },
+        "m@fft.logo.it": {
+            "email": "m@fft.logo.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$oV5GMeqTor1Lp/uNxhq69Q$NhjPkd7Z1pztSSZfBXEAnAMBHig6LlLNEny+q4bCjYI",
+            "id": "j2rlbo2ws3i",
+            "roles": [
+                "USER"
+            ],
+            "username": "mattfffeo"
         }
     }
 }

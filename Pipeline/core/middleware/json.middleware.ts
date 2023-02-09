@@ -35,6 +35,7 @@ const json = (data:Record<string,any>|string)=>{
         response.end("");
         return
     }
+    response.setHeader("Content-Type", "application/json")
     response.end(stringified)
   }
 
@@ -44,9 +45,16 @@ const json = (data:Record<string,any>|string)=>{
     request.on("data", (data) => chunks.push(data));
     request.on("end", () => {
       const completed = Buffer.concat(chunks);
-      const requestBody = parseJson(completed);
-      request.body = requestBody;
-      resolve(requestBody);
+      //esegui solo se request ha un content type
+      const contentTypeRequest = request.headers["content-type"];
+      if(contentTypeRequest && contentTypeRequest.toLowerCase().includes('json')){
+        const requestBody = parseJson(completed);
+        request.body = requestBody;
+        resolve(requestBody);
+      }else {
+        request.body = completed;
+        resolve(completed)
+      }
     });
     request.on("error", (err) => {
       console.log(["[jsonMiddleware: request error] ", err]);

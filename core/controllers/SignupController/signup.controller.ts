@@ -77,7 +77,9 @@ export const signupUserController: Middleware = async (request, response) => {
   }
 
   const session = await sessionManager.createSession(userLogin)
-  response.cookie('SESSION_ID',session.sessionid)
+  response.setHeader('Access-Control-Allow-Credentials', 'true')
+  response.setHeader("withCredentials","true")
+  response.cookie('SESSION_ID',session.sessionid,{secure:true,httpOnly:true,sameSite:'none',maxAge:2*60})
   response.json(newUser)
 
 };
