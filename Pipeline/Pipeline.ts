@@ -33,6 +33,7 @@ export class PipelineServer {
     request: IncomingMessage,
     response: ServerResponse
   ) {
+    // response.end = (chunk)=>{} //todo crea un proxy di questo metodo
     const REQUEST_URL = request.url!;
     const REQUEST_METHOD =
       request.method!.toLowerCase() as keyof IRequestMiddlewaresRecord;
@@ -67,6 +68,9 @@ export class PipelineServer {
     middlewares: Middleware[]
   ) {
     for await (let middleware of middlewares) {
+      if(request._completed){ // è un fleg che mi permette di interrompere la catena di esecuzione dei middleware
+        break
+      }
       await middleware(request, response);
     }
   }
@@ -78,6 +82,7 @@ export class PipelineServer {
     middlewares: ErrorMiddleware[]
   ) {
     for await (let errorMiddleware of middlewares){
+
         await errorMiddleware(error,request,response);
     }
   }

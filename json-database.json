@@ -232,6 +232,15 @@
                 "USER"
             ],
             "username": "mattfffeo"
+        },
+        "m@t.logo.ti": {
+            "email": "m@t.logo.ti",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$t4qCbSXEUN5C78khpnFzmQ$bdJqvX7+whraIJ6lUgy/7/fvXwGjam//mew8Pf48lq4",
+            "id": "o14h92ezwjs",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
         }
     }
 }

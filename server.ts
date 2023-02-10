@@ -15,6 +15,8 @@ import {
   writeSteamFactory,
 } from "./Pipeline/core/middleware/log.middleware";
 import path from "path";
+import { userController } from "./core/controllers/UserController/user.controller";
+import { sessionMiddleware } from "./core/Middleware/session.middleware";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -51,9 +53,4 @@ pipeline
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
-
-pipeline.route("/api/cookie").post(async (req, res) => {
-  // res.cookie('rjwt','',{expires:new Date('Thu Jan 01 1970 01:00:00 GMT+0100')})
-  console.log(req.cookies);
-  res.end();
-});
+pipeline.route("/api/user").get(sessionMiddleware,userController);
