@@ -13,6 +13,7 @@ declare module 'http' {
       interface ServerResponse {
         json:(data:Record<string,any>|string)=>void
         cookie:(name:string,valude:string,options?:cookie.CookieSerializeOptions|undefined)=>void //passa 
+        clearcookie:(name:string)=>void
      }
 
 

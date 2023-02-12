@@ -1,4 +1,5 @@
 import { JsonDB, Config } from "node-json-db";
+import { DBFood } from "../../models/DbFood.interface";
 import { DbUser } from "../../models/DbUser.interface";
 import { DatabaseModel } from "../model/database.model";
 
@@ -6,9 +7,21 @@ export class JSONDB implements DatabaseModel {
   config!: Config;
   db!: JsonDB;
   userBase = `/user`;
+  foodBase = `/food`;
   constructor() {
     this.config = new Config("json-database", true, true, "/");
     this.db = new JsonDB(this.config);
+  }
+
+  
+  async getAllFood(): Promise<DBFood[]|null> {
+    // throw new Error("Method not implemented.");
+    try {
+      const food = await this.db.getData(`${this.foodBase}`)
+      return food
+    } catch (error) {
+      return null
+    }
   }
   
   async getUserByEmail(email: string): Promise<DbUser | null> {
@@ -31,4 +44,6 @@ export class JSONDB implements DatabaseModel {
   async deleteUser(user: DbUser) {}
 
   async patchUser(user: DbUser) {}
+
+  
 }

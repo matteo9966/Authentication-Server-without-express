@@ -16,5 +16,9 @@ export class DatabaseFacade {
         return this.db.getUserByEmail(email);
     }
 
+    async getAllFood(){
+        return this.db.getAllFood();
+    }
+
     
 }

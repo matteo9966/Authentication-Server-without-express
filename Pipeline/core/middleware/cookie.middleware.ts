@@ -1,30 +1,33 @@
 import { Middleware } from "../Middleware.types";
-import cookie from 'cookie';
+import cookie from "cookie";
 import { ServerResponse } from "http";
-const cookieFactory =(response:ServerResponse)=>{
-    
-   const cookiefn = (name:string,value:string,options?:cookie.CookieSerializeOptions|undefined)=>{
-        response.setHeader('Set-Cookie',cookie.serialize(name,value,options))
-    }
+const cookieFactory = (response: ServerResponse) => {
+  const cookiefn = (
+    name: string,
+    value: string,
+    options?: cookie.CookieSerializeOptions | undefined
+  ) => {
+    response.setHeader("Set-Cookie", cookie.serialize(name, value, options));
+  };
+  const clearcookie = (cookiename: string) => {
+    response.cookie(cookiename, "", { maxAge: 0, expires: new Date() });
+  };
 
-    return cookiefn
-
-}
-
-
-export const cookieMiddleware: Middleware = async (request, response) => {
-    //1 vedo se il request ha dei cookie
-    const requestCookies = request?.headers?.cookie;
-    if(requestCookies){
-       const parsedCookies = cookie.parse(requestCookies);
-       request.cookies = parsedCookies
-    }
-    
-    const cookieFn = cookieFactory(response)
-     response.cookie = cookieFn
-    
+  return {cookiefn,clearcookie};
 };
 
+export const cookieMiddleware: Middleware = async (request, response) => {
+  //1 vedo se il request ha dei cookie
+  const requestCookies = request?.headers?.cookie;
+  if (requestCookies) {
+    const parsedCookies = cookie.parse(requestCookies);
+    request.cookies = parsedCookies;
+  }
+
+  const cookieFn = cookieFactory(response);
+  response.cookie = cookieFn.cookiefn;
+  response.clearcookie =cookieFn.clearcookie;
+};
 
 /* 
 TODO:
