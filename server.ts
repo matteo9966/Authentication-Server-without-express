@@ -16,7 +16,6 @@ import {
 } from "./Pipeline/core/middleware/log.middleware";
 import path from "path";
 import { userController } from "./core/controllers/UserController/user.controller";
-import { sessionMiddleware } from "./core/Middleware/session.middleware";
 import { getFoodController } from "./core/controllers/FoodControllers/getFoodController.controller";
 import { logoutController } from "./core/controllers/LogoutController/logout.controller";
 import { loginController } from "./core/controllers/LoginController/login.controller";
@@ -56,7 +55,7 @@ pipeline
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
-pipeline.route("/api/user").get(sessionMiddleware,userController);
-pipeline.route("/api/food").get(sessionMiddleware,getFoodController);
+pipeline.route("/api/user").get(userController);
+pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController)
 pipeline.route("/api/login").post(loginController)

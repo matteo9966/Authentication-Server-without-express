@@ -8,8 +8,6 @@ import { hashPassword } from "../../utils/hashPassword";
 import { dbConnection } from "../../database/database.connection";
 import { DbUser } from "../../models/DbUser.interface";
 import { validateEmail } from "../../utils/validateEmail";
-import { sessionManager } from "../../session-manager/session-manager";
-import { cookieNames } from "../../constants/cookies";
 export const signupUserController: Middleware = async (request, response) => {
   const userSignup: IUserSignup = request.body as IUserSignup;
   if (
@@ -77,10 +75,6 @@ export const signupUserController: Middleware = async (request, response) => {
 
   }
 
-  const session = await sessionManager.createSession(userLogin)
-  response.setHeader('Access-Control-Allow-Credentials', 'true')
-  response.setHeader("withCredentials","true")
-  response.cookie(cookieNames.SESSION_ID,session.sessionid,{secure:true,httpOnly:true,sameSite:'none',maxAge:10*60})
   response.json(newUser)
 
 };

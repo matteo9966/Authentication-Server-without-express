@@ -1,7 +1,6 @@
 //il login vede se c'è un utente con quella email nel db, verifica la passowrd, se la password corrisponde restituisce un session id
 
 import { Middleware } from "../../../Pipeline/core/Middleware.types";
-import { sessionManager } from "../../session-manager/session-manager";
 import { dbConnection } from "../../database/database.connection";
 import { loginRequest } from "../../models/Login/login.request.interface";
 import httpError from "http-errors";
@@ -35,9 +34,6 @@ export const loginController: Middleware = async (request, response) => {
         username:user.username
     }
 
-    const sessionID = await sessionManager.createSession(loginResponse)
-    //una funzione che prende request e aggiunge il session id?
-    response.cookie('SESSION_ID',sessionID.sessionid,{secure:true,httpOnly:true,sameSite:'none',maxAge:10*60})
     response.statusCode=200;
     response.json(loginResponse)
 
