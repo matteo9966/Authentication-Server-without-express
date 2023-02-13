@@ -15,6 +15,7 @@
   "devDependencies": {
     "@types/app-root-dir": "^0.1.1",
     "@types/http-errors": "^2.0.1",
+    "@types/jsonwebtoken": "^9.0.1",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.11.19",
     "@types/validator": "^13.7.12",
@@ -26,6 +27,7 @@
     "argon2": "^0.30.3",
     "cookie": "^0.5.0",
     "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.0",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "node-json-db": "^2.1.4",

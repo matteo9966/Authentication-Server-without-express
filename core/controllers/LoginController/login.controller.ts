@@ -6,6 +6,7 @@ import { loginRequest } from "../../models/Login/login.request.interface";
 import httpError from "http-errors";
 import argon2 from "argon2";
 import { IUserLoginResponse } from "../../models/Login/login.response.interface";
+import { createJWT } from "../../utils/jwtValidation";
 export const loginController: Middleware = async (request, response) => {
   const requestLogin: loginRequest = request.body as loginRequest;
   if (!requestLogin?.email || !requestLogin?.password) {
@@ -33,7 +34,14 @@ export const loginController: Middleware = async (request, response) => {
         roles:user.roles,
         username:user.username
     }
+    
+    const jsontoken = await createJWT(loginResponse);
+    if(jsontoken){
+      response.cookie('SESSION_ID',jsontoken);
 
+    }else{
+      throw new Error('errore creazione token')
+    }
     response.statusCode=200;
     response.json(loginResponse)
 
@@ -46,6 +54,7 @@ export const loginController: Middleware = async (request, response) => {
 } catch (err) {
     // internal failure
     console.log(err)
+   
     throw httpError.Unauthorized("wrong email or password");
     // throw httpError.InternalServerError("server error");
   }
