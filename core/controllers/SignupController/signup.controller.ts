@@ -3,7 +3,7 @@ import { IUserSignup } from "../../models/UserSignup.interface";
 import createHttpError from "http-errors";
 import { validatePassword } from "../../utils/validatePassword";
 import _ from "lodash";
-import { IUserLogin } from "../../models/UserLogin.interface";
+import { IUserLoginResponse } from "../../models/Login/login.response.interface";
 import { hashPassword } from "../../utils/hashPassword";
 import { dbConnection } from "../../database/database.connection";
 import { DbUser } from "../../models/DbUser.interface";
@@ -43,7 +43,7 @@ export const signupUserController: Middleware = async (request, response) => {
     throw createHttpError.BadRequest(error);
   }
 
-  const newUser:IUserLogin = {
+  const newUser:IUserLoginResponse = {
     email:userSignup.email,
     id:Math.random().toString(36).slice(2),
     roles:['USER'],
@@ -69,7 +69,7 @@ export const signupUserController: Middleware = async (request, response) => {
     console.log(error);
   }
 
-  const userLogin:IUserLogin = {
+  const userLogin:IUserLoginResponse = {
     email:dbUser.email,
     id:dbUser.id,
     roles:dbUser.roles,
@@ -80,7 +80,7 @@ export const signupUserController: Middleware = async (request, response) => {
   const session = await sessionManager.createSession(userLogin)
   response.setHeader('Access-Control-Allow-Credentials', 'true')
   response.setHeader("withCredentials","true")
-  response.cookie(cookieNames.SESSION_ID,session.sessionid,{secure:true,httpOnly:true,sameSite:'none',maxAge:2*60})
+  response.cookie(cookieNames.SESSION_ID,session.sessionid,{secure:true,httpOnly:true,sameSite:'none',maxAge:10*60})
   response.json(newUser)
 
 };

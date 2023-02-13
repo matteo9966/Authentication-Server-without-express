@@ -340,6 +340,24 @@
                 "USER"
             ],
             "username": "matto"
+        },
+        "m@ta.it": {
+            "email": "m@ta.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$FSvJMn6mg/qk4X0f3czlbg$O73+0ZGNCi/IBgVXpjMftlGCZigg9B+eh75oawhgim0",
+            "id": "qm7vkf46ala",
+            "roles": [
+                "USER"
+            ],
+            "username": "matto"
+        },
+        "test@test.it": {
+            "email": "test@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$9bwMMZTrv9GYXa08zRkIfQ$OXsdrnySaJWRqgo89VyIrL2nxgbq/P/NpvLNHrqYfTg",
+            "id": "gnu0adtdstp",
+            "roles": [
+                "USER"
+            ],
+            "username": "userTest"
         }
     },
     "food": [

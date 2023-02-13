@@ -1,5 +1,5 @@
 import { generateSessionId } from "../../utils/createSession";
-import { IUserLogin } from "../UserLogin.interface";
+import { IUserLoginResponse } from "../Login/login.response.interface";
 import { UserSession } from "./UserSession.class";
 
 export class Sessions {
@@ -8,7 +8,7 @@ export class Sessions {
     this.sessions = new Map<string, UserSession>([['1234',new UserSession('1234',{email:'m@t.it',id:'m-id',roles:["ADMIN"],username:'matteo-username'})]]);
   }
 
-  async createSession(user: IUserLogin) {
+  async createSession(user: IUserLoginResponse) {
     //user potrebbe avere più dispositivi quindi per ogni user creo una sessione
     const sessionId = await generateSessionId();
     const userSession = new UserSession(sessionId, user);

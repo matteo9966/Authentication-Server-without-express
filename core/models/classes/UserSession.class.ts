@@ -1,12 +1,12 @@
 import { Moment} from "moment";
 import moment from 'moment';
-import { IUserLogin } from "../UserLogin.interface";
+import { IUserLoginResponse } from "../Login/login.response.interface";
 
 export class UserSession {
   static readonly SESSION_DURATION = 2 * 60; //seconds
   private validUntil!: Moment;
 
-  constructor(public sessionid: string, public user: IUserLogin){
+  constructor(public sessionid: string, public user: IUserLoginResponse){
 
     //quando chiamo userSession creo il validuntil
 

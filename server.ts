@@ -19,6 +19,7 @@ import { userController } from "./core/controllers/UserController/user.controlle
 import { sessionMiddleware } from "./core/Middleware/session.middleware";
 import { getFoodController } from "./core/controllers/FoodControllers/getFoodController.controller";
 import { logoutController } from "./core/controllers/LogoutController/logout.controller";
+import { loginController } from "./core/controllers/LoginController/login.controller";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -58,3 +59,4 @@ pipeline.route("/api/signup/verify-email").post(emailExistsController);
 pipeline.route("/api/user").get(sessionMiddleware,userController);
 pipeline.route("/api/food").get(sessionMiddleware,getFoodController);
 pipeline.route("/api/logout").post(logoutController)
+pipeline.route("/api/login").post(loginController)
