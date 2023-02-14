@@ -4,7 +4,6 @@ import createHttpError from "http-errors";
 //     //
 // }
 
-//todo do something
 
 export const httpErrorMiddleware: ErrorMiddleware = async (
   error,

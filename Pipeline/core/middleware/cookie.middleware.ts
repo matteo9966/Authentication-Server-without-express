@@ -30,7 +30,7 @@ export const cookieMiddleware: Middleware = async (request, response) => {
 };
 
 /* 
-TODO:
+
 
 
   handleRequestCookies(request: http.IncomingMessage) {

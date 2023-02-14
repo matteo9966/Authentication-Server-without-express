@@ -5,7 +5,7 @@ declare module 'http' {
      interface IncomingMessage {
          body:Record<string,any>
          cookies:record<string,string>
-         user:IUserLoginResponse
+         user:IUserLoginResponse|null
          _completed:boolean // un booleano che uso come flag per interrompere la catena di middleware
 
      }

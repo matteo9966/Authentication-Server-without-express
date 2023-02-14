@@ -1,6 +1,6 @@
-import { readAllLessonsController } from "./core/controllers/LessonsControllers/readAllLessons.controller";
-import { checkIfAuthenticated } from "./core/Middleware/checkIfAuthenticated.middleware";
-import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
+// import { readAllLessonsController } from "./core/controllers/LessonsControllers/readAllLessons.controller";
+import { checkIfAuthenticatedMiddleware } from "./core/Middleware/checkIfAuthenticated.middleware";
+// import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { jsonMiddleWare } from "./Pipeline/core/middleware/json.middleware";
 import { pipelineServer } from "./Pipeline/Pipeline";
 import * as https from "https";
@@ -19,7 +19,7 @@ import { userController } from "./core/controllers/UserController/user.controlle
 import { getFoodController } from "./core/controllers/FoodControllers/getFoodController.controller";
 import { logoutController } from "./core/controllers/LogoutController/logout.controller";
 import { loginController } from "./core/controllers/LoginController/login.controller";
-import { jwtValidationMiddleware } from "./core/Middleware/jwtValidatio.middleware";
+import { jwtParseMiddleware } from "./core/Middleware/jwtParse.middleware";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -46,17 +46,17 @@ pipeline.listen(9000, () => {
   console.log("listening on 9000");
 });
 
-pipeline
-  .route("/api/lessons")
-  .get(
-    checkIfAuthenticated,
-    checkIfAuthorized(["ADMin"]),
-    readAllLessonsController
-  );
+// pipeline
+//   .route("/api/lessons")
+//   .get(
+//     checkIfAuthenticated,
+//     checkIfAuthorized(["ADMin"]),
+//     readAllLessonsController
+//   );
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
-pipeline.route("/api/user").get(jwtValidationMiddleware,userController);
-pipeline.route("/api/food").get(jwtValidationMiddleware,getFoodController);
-pipeline.route("/api/logout").post(logoutController)
-pipeline.route("/api/login").post(loginController)
+pipeline.route("/api/user").get(jwtParseMiddleware, userController);
+pipeline.route("/api/food").get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
+pipeline.route("/api/logout").post(logoutController);
+pipeline.route("/api/login").post(loginController);

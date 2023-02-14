@@ -4,19 +4,21 @@ import { verifyJWT } from "../utils/jwtValidation";
 import { JwtPayload } from "jsonwebtoken";
 import _ from "lodash";
 import { IUserLoginResponse } from "../models/Login/login.response.interface";
-
-
-//TODO: questo dovrebbe prendere solo il session id e aggiungere il payload al request, crea un altro middleware per l'authentication
-export const jwtValidationMiddleware: Middleware = async (request, respone) => {
+/**
+ * @description this middleware parses the jwt payload if its valid it adds it to the response object, else it adds null
+ * @param request 
+ * @param respone 
+ * @returns 
+ */
+export const jwtParseMiddleware: Middleware = async (request, respone) => {
     const cookies = request.cookies;
     const jwt =_.has(cookies, 'SESSION_ID')? request?.cookies["SESSION_ID"] : null;
-  if (!jwt) {
-    throw httpErrors.Unauthorized("no session id provided");
-  }
-
+ 
+    let userSession:IUserLoginResponse|null=null;
+  
   try {
     const payload = await verifyJWT(jwt);
-    console.log("🚀 ~ file: jwtValidatio.middleware.ts:16 ~ constjwtValidationMiddleware:Middleware= ~ payload", payload)
+    console.log(" ~ file: jwtValidatio.middleware.ts:16 ~ constjwtValidationMiddleware:Middleware= ~ payload", payload)
     
     if (payload && typeof payload !== "string") {
       const userLoginResponse = createPayloadFromToken(payload);
@@ -30,14 +32,10 @@ export const jwtValidationMiddleware: Middleware = async (request, respone) => {
       throw new Error("wrong jwt format");
     }
   } catch (error) {
-    if (error instanceof Error) {
-      if (error.message) {
-        throw httpErrors.BadRequest(error.message);
-      }
-    } else throw httpErrors.Unauthorized("jwt error");
+    console.log(" ~ file: jwtParse.middleware.ts:32 ~ constjwtParseMiddleware:Middleware= ~ error: ", error)
+    
+    request.user=null; // va al successivo
   }
-
-  respone.end();
 };
 
 function createPayloadFromToken(payload: JwtPayload) {

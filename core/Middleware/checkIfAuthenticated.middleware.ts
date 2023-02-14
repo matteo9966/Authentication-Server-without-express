@@ -1,5 +1,8 @@
 import { Middleware } from "../../Pipeline/core/Middleware.types";
-
-export const checkIfAuthenticated:Middleware = async(request,response)=>{
-    return true // questi middleware possono interrompere il pipeline oppure lanciare un errore che viene gestito dal errorPipeline
+import httpErrors from 'http-errors';
+export const checkIfAuthenticatedMiddleware:Middleware = async(request,response)=>{
+    const user = request.user;
+    if(!user){
+        throw  httpErrors.Unauthorized('You are not authenticated');
+    }
 }

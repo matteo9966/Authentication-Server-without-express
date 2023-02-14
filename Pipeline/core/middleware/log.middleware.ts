@@ -2,7 +2,6 @@ import { Middleware } from "../Middleware.types";
 import fs from 'fs';
 import path from "path";
 import moment from "moment";
-import appRootDir from 'app-root-dir'
 import _ from 'lodash';
 export function logMiddlewareFactory(fsWriteStream:fs.WriteStream):Middleware{
     
@@ -30,7 +29,6 @@ export function logMiddlewareFactory(fsWriteStream:fs.WriteStream):Middleware{
     return logMiddleware
     
 }
-const rootDir = appRootDir.get(); //TODO rimuovi la libreria approotdir
 
 export const writeSteamFactory = (file:string)=>{
     try {
