@@ -20,5 +20,9 @@ export class DatabaseFacade {
         return this.db.getAllFood();
     }
 
+    async getAllUsers(){
+        return this.db.getAllUsers();
+    }
+
     
 }
