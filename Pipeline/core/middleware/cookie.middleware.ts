@@ -1,5 +1,6 @@
 import { Middleware } from "../Middleware.types";
 import cookie from "cookie";
+import _ from 'lodash';
 import { ServerResponse } from "http";
 const cookieFactory = (response: ServerResponse) => {
   const cookiefn = (
@@ -7,7 +8,17 @@ const cookieFactory = (response: ServerResponse) => {
     value: string,
     options?: cookie.CookieSerializeOptions | undefined
   ) => {
-    response.setHeader("Set-Cookie", cookie.serialize(name, value, options));
+
+    const cookies = response.getHeader("Set-Cookie")
+    let responseCookies:string[] = [];
+    if(cookies && _.isArray(cookies)){
+      responseCookies=responseCookies.concat(cookies)
+    }
+    if(cookies && typeof cookies==='string'){
+      responseCookies.push(cookies)
+    }
+   console.log(cookies,typeof cookies,_.isArray(cookies));
+    response.setHeader("Set-Cookie",[...responseCookies,cookie.serialize(name, value, options)]);
   };
   const clearcookie = (cookiename: string) => {
     response.cookie(cookiename, "", { maxAge: 0, expires: new Date() });

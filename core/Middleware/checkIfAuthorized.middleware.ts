@@ -6,9 +6,16 @@ import createHttpError from 'http-errors'
 export function checkIfAuthorized(allowedRoles:string[]):Middleware{
  
     const middleware:Middleware = async (request,response)=>{
+        const user = request?.user;
+
+        if(!user){
+            throw createHttpError.Unauthorized('you are not authorized to access this route')
+        }
 
 
-        return 
+        return true;
+
+
 
     }
 

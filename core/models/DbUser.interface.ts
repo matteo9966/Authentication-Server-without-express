@@ -7,3 +7,5 @@ export interface DbUser {
     roles: Array<keyof typeof UserRoles>,
     username:string,
 }
+
+export type DbUserClear = Omit<DbUser,"passwordDigest">

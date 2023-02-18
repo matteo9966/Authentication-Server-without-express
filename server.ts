@@ -20,6 +20,7 @@ import { getFoodController } from "./core/controllers/FoodControllers/getFoodCon
 import { logoutController } from "./core/controllers/LogoutController/logout.controller";
 import { loginController } from "./core/controllers/LoginController/login.controller";
 import { jwtParseMiddleware } from "./core/Middleware/jwtParse.middleware";
+import { getAllUsersController } from "./core/controllers/AdminControllers/GetAllUsersController/getAllUsers.controller";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -60,3 +61,10 @@ pipeline.route("/api/user").get(jwtParseMiddleware, userController);
 pipeline.route("/api/food").get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
+pipeline.route("/api/user").get(userController);
+pipeline.route("/api/food").get(getFoodController);
+pipeline.route("/api/logout").post(logoutController)
+pipeline.route("/api/login").post(loginController)
+pipeline.route("/api/admin/users").get(getAllUsersController)
+
+
