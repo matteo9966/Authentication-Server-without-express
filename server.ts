@@ -21,6 +21,8 @@ import { logoutController } from "./core/controllers/LogoutController/logout.con
 import { loginController } from "./core/controllers/LoginController/login.controller";
 import { jwtParseMiddleware } from "./core/Middleware/jwtParse.middleware";
 import { getAllUsersController } from "./core/controllers/AdminControllers/GetAllUsersController/getAllUsers.controller";
+import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
+import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -58,13 +60,29 @@ pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
 pipeline.route("/api/user").get(jwtParseMiddleware, userController);
-pipeline.route("/api/food").get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
+pipeline
+  .route("/api/food")
+  .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
 pipeline.route("/api/user").get(userController);
 pipeline.route("/api/food").get(getFoodController);
-pipeline.route("/api/logout").post(logoutController)
-pipeline.route("/api/login").post(loginController)
-pipeline.route("/api/admin/users").get(getAllUsersController)
+pipeline.route("/api/logout").post(logoutController);
+pipeline.route("/api/login").post(loginController);
+pipeline
+  .route("/api/admin/users")
+  .get(
+    jwtParseMiddleware,
+    checkIfAuthenticatedMiddleware,
+    checkIfAuthorized(["ADMIN"]),
+    getAllUsersController
+  );
 
-
+pipeline
+  .route("/api/admin/as-user")
+  .post(
+    jwtParseMiddleware,
+    checkIfAuthenticatedMiddleware,
+    checkIfAuthorized(["ADMIN"]),
+    loginAsUserController
+  );

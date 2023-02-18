@@ -1,23 +1,27 @@
 import { Middleware } from "../../Pipeline/core/Middleware.types";
-import {IncomingMessage,ServerResponse} from 'http';
-import _ from 'lodash';
+import _ from "lodash";
+import createHttpError from "http-errors";
 import { UserRoles } from "../constants/user-roles";
-import createHttpError from 'http-errors'
-export function checkIfAuthorized(allowedRoles:string[]):Middleware{
- 
-    const middleware:Middleware = async (request,response)=>{
-        const user = request?.user;
+export function checkIfAuthorized(allowedRoles: (keyof typeof UserRoles)[]): Middleware {
+  const middleware: Middleware = async (request, response) => {
+    const user = request?.user;
 
-        if(!user){
-            throw createHttpError.Unauthorized('you are not authorized to access this route')
-        }
-
-
-        return true;
-
-
-
+    if (!user) {
+      throw createHttpError.Unauthorized(
+        "you are not authorized to access this route"
+      );
+    }
+    const roles = user.roles;
+    console.log({user},roles)
+    if (_.intersection(roles, allowedRoles).length > 0) {
+      return true;
+    } else {
+      throw createHttpError.Unauthorized(
+        "you don t have the authorization to access this route"
+      );
     }
 
-    return middleware
+  };
+
+  return middleware;
 }

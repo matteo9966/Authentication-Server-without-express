@@ -8,7 +8,6 @@ const cookieFactory = (response: ServerResponse) => {
     value: string,
     options?: cookie.CookieSerializeOptions | undefined
   ) => {
-
     const cookies = response.getHeader("Set-Cookie")
     let responseCookies:string[] = [];
     if(cookies && _.isArray(cookies)){
@@ -21,7 +20,9 @@ const cookieFactory = (response: ServerResponse) => {
     response.setHeader("Set-Cookie",[...responseCookies,cookie.serialize(name, value, options)]);
   };
   const clearcookie = (cookiename: string) => {
-    response.cookie(cookiename, "", { maxAge: 0, expires: new Date() });
+    response.cookie(cookiename, "", { maxAge: 0, expires: new Date(),path:'/' });
+    response.cookie(cookiename, "", { maxAge: 0, expires: new Date(),path:'/api' });
+    response.cookie(cookiename, "", { maxAge: 0, expires: new Date(),path:'/api/admin' });
   };
 
   return {cookiefn,clearcookie};

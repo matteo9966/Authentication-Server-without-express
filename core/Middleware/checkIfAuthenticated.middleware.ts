@@ -5,4 +5,6 @@ export const checkIfAuthenticatedMiddleware:Middleware = async(request,response)
     if(!user){
         throw  httpErrors.Unauthorized('You are not authenticated');
     }
+
+
 }

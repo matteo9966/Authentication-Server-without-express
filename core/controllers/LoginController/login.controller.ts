@@ -37,7 +37,7 @@ export const loginController: Middleware = async (request, response) => {
     
     const jsontoken = await createJWT(loginResponse);
     if(jsontoken){
-      response.cookie('SESSION_ID',jsontoken);
+      response.cookie('SESSION_ID',jsontoken,{path:'/'});
 
     }else{
       throw new Error('errore creazione token')

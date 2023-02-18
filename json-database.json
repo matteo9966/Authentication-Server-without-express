@@ -358,6 +358,15 @@
                 "USER"
             ],
             "username": "userTest"
+        },
+        "admin@test.it": {
+            "email": "test@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$9bwMMZTrv9GYXa08zRkIfQ$OXsdrnySaJWRqgo89VyIrL2nxgbq/P/NpvLNHrqYfTg",
+            "id": "gnu0adtdstp",
+            "roles": [
+                "ADMIN"
+            ],
+            "username": "userTest"
         }
     },
     "food": [
