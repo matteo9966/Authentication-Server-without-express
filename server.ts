@@ -61,3 +61,5 @@ pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController)
 pipeline.route("/api/login").post(loginController)
 pipeline.route("/api/admin/users").get(getAllUsersController)
+
+

@@ -1,5 +1,5 @@
-import { DbUser } from "../DbUser.interface";
+import {DbUserClear } from "../DbUser.interface";
 
 export interface GetAllUsersResponse {
-    users:DbUser[]
+    users:DbUserClear[]
 }
