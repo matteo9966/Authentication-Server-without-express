@@ -8,8 +8,8 @@ export class JSONDB implements DatabaseModel {
   db!: JsonDB;
   userBase = `/user`;
   foodBase = `/food`;
-  constructor() {
-    this.config = new Config("json-database", true, true, "/");
+  constructor(database="json-database") {
+    this.config = new Config(database, true, true, "/");
     this.db = new JsonDB(this.config);
   }
   async getAllUsers(): Promise<DbUser[] | null> {

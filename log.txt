@@ -359,3 +359,884 @@ BODY
 
                     
                     |--------------END------------|
+[Mon Feb 20 2023 16:01:20 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,67
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"userTest"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:07:47 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"2r5bik0fsxr@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:07:47 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:08:29 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"qzq89mmznr@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:08:29 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:19:32 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"s7ot2iqhdaf@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:19:32 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"miv956dpfx@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:19:32 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:20:46 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,55
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"userTest"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:23:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"h5ful8epfx@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:23:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"3592gjf8k4y@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:23:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:23:38 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:25:37 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"enowg7dkw2j@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:25:37 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"tm87uen4odo@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:25:37 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:25:37 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:26:53 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"c1iik2531k@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:26:53 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"lt1syd0w1n@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:26:53 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:26:53 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:41 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"ew26ooor6n@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:41 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,80
+connection,close]
+
+BODY 
+
+          {"email":"0lyukynzus6k@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:41 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:41 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:59 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"omdo1c7ocb@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:59 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"67w2twqibku@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:59 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:27:59 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:14 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"ketkz4endz@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:14 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"ch8rhssv4sm@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:14 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:14 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:29 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"wjpea8nygab@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:30 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"jjh70e48o5c@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:30 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:29:30 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:30:15 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,67
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"userTest"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:31:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"6splhg347ur@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:31:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"n39hmlvnklp@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:31:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:31:38 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,70
+connection,close]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:31:38 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:32:15 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,78
+connection,close]
+
+BODY 
+
+          {"email":"j6gqv4wk9g@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:32:15 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"2l53d8eb47p@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:32:16 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:32:16 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,70
+connection,close]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:32:16 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:38:09 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"2r6a2khayd8@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:38:09 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,79
+connection,close]
+
+BODY 
+
+          {"email":"6s2ccj35vdk@random.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:38:09 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,58
+connection,close]
+
+BODY 
+
+          {"email":"","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:38:09 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+content-type,application/json
+content-length,70
+connection,close]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"random-user"}
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 16:38:09 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
