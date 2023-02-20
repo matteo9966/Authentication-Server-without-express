@@ -367,6 +367,15 @@
                 "ADMIN"
             ],
             "username": "userTest"
+        },
+        "tom@tom.it": {
+            "email": "tom@tom.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$9xlrf7fWO1PU3yPOY8qS8Q$41EmBsoN83VS4N4s0rfp1Ur4afya+/LzJcTr7nwMK90",
+            "id": "oce0q4e8aod",
+            "roles": [
+                "USER"
+            ],
+            "username": "matteo"
         }
     },
     "food": [
