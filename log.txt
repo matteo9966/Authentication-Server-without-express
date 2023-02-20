@@ -177,3 +177,185 @@ BODY
 
                     
                     |--------------END------------|
+[Mon Feb 20 2023 14:29:11 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:30:33 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:30:50 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:37:24 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:37:38 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:37:51 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:38:21 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:38:48 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:39:24 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:42:07 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:42:30 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Mon Feb 20 2023 15:45:32 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[host,localhost:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|

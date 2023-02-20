@@ -25,13 +25,14 @@ import { getAllUsersController } from "./core/controllers/AdminControllers/GetAl
 import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
 import { AddressInfo } from "net";
+import superagent from "superagent";
 //creo un server https
 
 dotenv.config();
 const environment = (process.env.NODE_ENV)?.trim();
 const port = environment === 'dev'? 9000 : environment === 'test'? 8999 : 8000
 
-const httpsServer = https.createServer({
+export const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
   cert: fs.readFileSync("./cert.pem"),
 });
@@ -102,3 +103,5 @@ pipeline
 
   const server = httpsServer
   export {pipeline,server}
+
+  // superagent.get(​'https://localhost:8999/api/test').trustLocalhost().then(res=>console.log(res.statusCode))

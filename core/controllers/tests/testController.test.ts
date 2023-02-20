@@ -1,17 +1,22 @@
 process.env.NODE_ENV = "test";
 import chai, { expect } from "chai";
-import chaiHttp from "chai-http";
-import { server } from "../../../server";
+import superagent from "superagent";
+import { httpsServer } from "../../../server";
+import { createServer } from "http";
+
+
 const base = "​https://localhost:8999";
-const should = chai.should();
 
-chai.use(chaiHttp); // un plugin di chai
-const request = chai.request;
+describe("my first API test /test", function () {
+  describe("GET /api/test", function () {
+    it("should return status code 200",async function () {
+      const response = await superagent.get(​'https://localhost:8999/api/test').trustLocalhost()
+      expect(response.statusCode).to.equal(200)
+    });
 
-describe("/GET test - first test of http client", function () {
-  it("should return status code 200", () => {
-    request(base)
-      .get("/api/test")
-      .then((res) => expect(res).to.have.status(201));
+    
+
   });
 });
+
+
