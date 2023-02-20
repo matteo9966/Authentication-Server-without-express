@@ -1,5 +1,6 @@
 // import { readAllLessonsController } from "./core/controllers/LessonsControllers/readAllLessons.controller";
 import { checkIfAuthenticatedMiddleware } from "./core/Middleware/checkIfAuthenticated.middleware";
+import dotenv from 'dotenv';
 // import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { jsonMiddleWare } from "./Pipeline/core/middleware/json.middleware";
 import { pipelineServer } from "./Pipeline/Pipeline";
@@ -23,7 +24,13 @@ import { jwtParseMiddleware } from "./core/Middleware/jwtParse.middleware";
 import { getAllUsersController } from "./core/controllers/AdminControllers/GetAllUsersController/getAllUsers.controller";
 import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
+import { AddressInfo } from "net";
 //creo un server https
+
+dotenv.config();
+const environment = (process.env.NODE_ENV)?.trim();
+const port = environment === 'dev'? 9000 : environment === 'test'? 8999 : 8000
+
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
   cert: fs.readFileSync("./cert.pem"),
@@ -34,20 +41,26 @@ httpsServer.on("request", (req, res) => {
 });
 
 const pipeline = pipelineServer(httpsServer);
-const logStream = writeSteamFactory(path.join(__dirname, "log.txt"));
-if (logStream) {
-  pipeline.use(logMiddlewareFactory(logStream)); //questo è solo per lo sviluppo
-  httpsServer.on("close", () => {
-    logStream.close();
-  });
+
+if(environment && environment!=='prod'){ 
+  const logStream = writeSteamFactory(path.join(__dirname, "log.txt"));
+  if (logStream) {
+    pipeline.use(logMiddlewareFactory(logStream)); //questo è solo per lo sviluppo
+    httpsServer.on("close", () => {
+      logStream.close();
+    });
+  }
 }
+
+
 pipeline.use(allowCorsMiddleware);
 pipeline.use(jsonMiddleWare); //l'ordine è importante questo json middleware aggiunge il metodo json al response e fa il parse del body
 pipeline.use(cookieMiddleware);
 
-pipeline.listen(9000, () => {
-  console.log("listening on 9000");
+pipeline.listen(port, () => {
 });
+
+pipeline.server.on('listening',()=>console.log("LISTENING ON PORT: ",(<AddressInfo>pipeline.server?.address()).port,'\n','ENVIRONMENT: ',environment))
 
 // pipeline
 //   .route("/api/lessons")
@@ -56,8 +69,8 @@ pipeline.listen(9000, () => {
 //     checkIfAuthorized(["ADMin"]),
 //     readAllLessonsController
 //   );
+pipeline.route("/api/test").get(async (req, res) => {res.statusCode=200;res.end()}); // un endpoint solo per scrivere un test
 pipeline.route("/api/signup").post(signupUserController);
-pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
 pipeline.route("/api/user").get(jwtParseMiddleware, userController);
 pipeline
@@ -86,3 +99,6 @@ pipeline
     checkIfAuthorized(["ADMIN"]),
     loginAsUserController
   );
+
+  const server = httpsServer
+  export {pipeline,server}

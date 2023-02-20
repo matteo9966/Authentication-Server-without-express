@@ -160,3 +160,20 @@ sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
 connection,close
 host,localhost:4200]
 |--------------END------------|
+[Sun Feb 19 2023 19:58:48 GMT+0100]
+[/api/test]
+Cookies:
+[]
+Headers:
+[accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|

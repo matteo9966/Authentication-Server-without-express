@@ -4,27 +4,35 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "start:dev": "tsnd --respawn --debug --files server.ts --watch **/*.ts",
-    "build": "tsc"
+    "start:dev": "SET NODE_ENV=dev && tsnd --respawn --debug --files server.ts --watch **/*.ts",
+    "start:test": "SET NODE_ENV=test && tsnd --respawn --debug --files server.ts --watch **/*.ts",
+    "build": "tsc",
+    "test": "SET NODE_ENV=test && mocha"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/app-root-dir": "^0.1.1",
+    "@types/chai": "^4.3.4",
     "@types/http-errors": "^2.0.1",
     "@types/jsonwebtoken": "^9.0.1",
     "@types/lodash": "^4.14.191",
+    "@types/mocha": "^10.0.1",
     "@types/node": "^18.11.19",
     "@types/validator": "^13.7.12",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "mocha": "^10.2.0",
+    "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0"
   },
   "dependencies": {
     "@types/cookie": "^0.5.1",
     "app-root-dir": "^1.0.2",
     "argon2": "^0.30.3",
+    "chai-http": "^4.3.0",
     "cookie": "^0.5.0",
     "http-errors": "^2.0.0",
     "jsonwebtoken": "^9.0.0",
