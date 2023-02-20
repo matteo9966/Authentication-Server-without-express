@@ -57,7 +57,6 @@ pipeline.listen(9000, () => {
 //     readAllLessonsController
 //   );
 pipeline.route("/api/signup").post(signupUserController);
-pipeline.route("/api/user").get(async (req, res) => res.end());
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
 pipeline.route("/api/user").get(jwtParseMiddleware, userController);
 pipeline
@@ -65,7 +64,6 @@ pipeline
   .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
-pipeline.route("/api/user").get(userController);
 pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
