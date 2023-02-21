@@ -115,12 +115,12 @@ pipeline
 
 
   function serverFactory() {
-    if (environment !== "test") {
-      return https.createServer({
-        key: fs.readFileSync("./key.pem"),
-        cert: fs.readFileSync("./cert.pem"),
-      });
-    } else {
-      return http.createServer();
-    }
+    // if (environment !== "test") {
+    //   return https.createServer({
+    //     key: fs.readFileSync("./key.pem"),
+    //     cert: fs.readFileSync("./cert.pem"),
+    //   });
+    // } else {
+    // }
+    return http.createServer();
   }

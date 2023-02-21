@@ -1,0 +1,85 @@
+[Tue Feb 21 2023 18:41:54 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[host,127.0.0.1:8999
+accept-encoding,gzip, deflate
+connection,close]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 18:44:52 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,0
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 18:45:00 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,0
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 18:45:59 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[host,127.0.0.1:8999
+accept-encoding,gzip, deflate
+connection,close
+content-length,0]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 18:46:20 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[host,127.0.0.1:8999
+accept-encoding,gzip, deflate
+connection,close
+content-length,0]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
