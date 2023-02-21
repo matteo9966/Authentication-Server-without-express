@@ -24,6 +24,7 @@ import { getAllUsersController } from "./core/controllers/AdminControllers/GetAl
 import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
 import { refreshController } from "./core/controllers/RefreshController/refresh.controller";
+import { whoamiController } from "./core/controllers/whoamiController/whoami.controller";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -52,7 +53,7 @@ pipeline.listen(9000, () => {
 
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
-pipeline.route("/api/user").get(jwtParseMiddleware,checkIfAuthenticatedMiddleware, userController);
+pipeline.route("/api/user").get(jwtParseMiddleware, userController);
 pipeline
   .route("/api/food")
   .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
@@ -70,6 +71,8 @@ pipeline
     checkIfAuthorized(["ADMIN"]),
     getAllUsersController
   );
+
+pipeline.route('/api/whoami').get(jwtParseMiddleware,whoamiController)
 
 pipeline
   .route("/api/admin/as-user")

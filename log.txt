@@ -160,3 +160,532 @@ sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
 connection,close
 host,localhost:4200]
 |--------------END------------|
+[Tue Feb 21 2023 15:42:12 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,45
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:38:30 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:39:06 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:39:33 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:39:42 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:39:54 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:40:37 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skip,true
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:43:56 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:43:59 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:47:32 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:47:36 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 16:49:52 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:01:52 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:06:36 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:07:28 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:11:08 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:16:29 GMT+0100]
+[/api/whoami]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTA1MzIsImV4cCI6MTY3OTU4MjUzMn0.C8-7to6IrZkyujCFWS4bEW9tZz-Y5B6kCGdym4HyuRSoNB8zcK27JcG2DEhWs77XHuaTNJF9SngQm3QJTPxVgrdsZEEPZPNl-oHKeOrWND7OEhjdGzkZ3JrDgSpHCOI2YjI3Pv5I-lOLcQnJTJ7UBuz3hryKJ8iB9SHb9lhDbGNAkZDnmKikUCFx5ysjytoV4gQcrZHR5djziYFkqke373k11VCNGxB5Xi_j4xdYlzAo4oC7eR8b1Ir0c2N1HbZUV_CBTkHYmFhczzrsrUWNgZT6tZQfp8kpgUiFTdzgPBUc1YzWiIWA82h6ajGi00GYTbc6AguALHkfpNOn1FtFVg;
+content-type,application/json; charset=utf-8
+accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:16:52 GMT+0100]
+[/api/whoami]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTA1MzIsImV4cCI6MTY3OTU4MjUzMn0.C8-7to6IrZkyujCFWS4bEW9tZz-Y5B6kCGdym4HyuRSoNB8zcK27JcG2DEhWs77XHuaTNJF9SngQm3QJTPxVgrdsZEEPZPNl-oHKeOrWND7OEhjdGzkZ3JrDgSpHCOI2YjI3Pv5I-lOLcQnJTJ7UBuz3hryKJ8iB9SHb9lhDbGNAkZDnmKikUCFx5ysjytoV4gQcrZHR5djziYFkqke373k11VCNGxB5Xi_j4xdYlzAo4oC7eR8b1Ir0c2N1HbZUV_CBTkHYmFhczzrsrUWNgZT6tZQfp8kpgUiFTdzgPBUc1YzWiIWA82h6ajGi00GYTbc6AguALHkfpNOn1FtFVg;
+content-type,application/json; charset=utf-8
+accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:17:07 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,45
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:17:33 GMT+0100]
+[/api/whoami]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTYyMjcsImV4cCI6MTY3OTU4ODIyN30.WiARoWEstP-tXfHPYEvC_uGDddsI5DROgyJv6vsX_viBZIxp3dzGV1erKiGd8Mi8-nR6_ntvVyGe9Kxk3QjwPihUGTvSkd9yZsIClUs0cnBz7qlCKDDCfl1fAdNGSpIqA4qJVAGG30rwb9rVTEt-Oijei2ysH4qvku5euY_IPdZe2E1MPGYWJxuQEhq7CHXBZnuHFgU8jfJNxkh-RpAb7ftI94B2YtLu5Q74euhUA6rRekei6NB4YTOhYroRx5WPTkHLftOJZzw-uK3zOEWsDs2R0iIH80Gk07gfjuWkDuLnKocjTr3F3vfbibdcAK_Si8wt3vnqQ6EaS6xjGFa0Yg;
+content-type,application/json; charset=utf-8
+accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:17:53 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,45
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Tue Feb 21 2023 17:18:16 GMT+0100]
+[/api/whoami]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTYyNzQsImV4cCI6MTY3Njk5NjI4NH0.DNTJTEDZO8rbqcjaX9Je1gBMq4T_nvHPcM863q6_u6mF5Ame9S6KEbe_i0jrA5bHOj2gMRUSVPcodkOZdaDprX0u1hHbvAb65TmbbXrSk4X3IRNjTFqUwY4CizLSCYHdv1l47X2rxo30x3ScpFka2ylIXVJg4DgqwjlScuWAsEeseDWj2r94HWEGgEZMBXkcI0k68BgCTfxNWu2Howj1-uv0e22Ou2o8WHJDeRWwt3msqG0BV9g9U-fk9rPJ2kDAX5NqLHw8EZVc404958dyvSMJRGCPcxqxfnpzOuxMOfNu4MQPoA6PR0w8eWwv67Z5qHIkWay3DkJPTrdpMoWs5A;
+content-type,application/json; charset=utf-8
+accept,*/*
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|

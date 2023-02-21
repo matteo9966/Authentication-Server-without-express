@@ -35,9 +35,10 @@ export const jwtParseMiddleware: Middleware = async (request, respone) => {
       throw new Error("wrong jwt format");
     }
   } catch (error) {
-    if(error instanceof Error){
-      throw httpErrors.BadRequest(error.message)
-    }
+    //TODO_ vedere qui che fare
+    // if(error instanceof Error){
+    //   throw httpErrors.BadRequest(error.message)
+    // }
     console.log(" ~ file: jwtParse.middleware.ts:32 ~ constjwtParseMiddleware:Middleware= ~ error: ", error)
     
     request.user=null; // va al successivo

@@ -17,7 +17,7 @@ const createJWT = (user: IUserLoginResponse) => {
     jwt.sign(
       user,
       private_key,
-      { expiresIn: 15*60, algorithm: "RS256" }, //15 minute token
+      { expiresIn: 10, algorithm: "RS256" }, //15 minute token
       (err, token) => {
         if (err) {
           reject(err);
