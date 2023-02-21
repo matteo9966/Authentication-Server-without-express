@@ -3,13 +3,16 @@ import chai, { expect } from "chai";
 import { ServerResponse } from "http";
 import superagent, { ResponseError } from "superagent";
 
-const base = "​https://localhost:8999";
+
+//TODO replace superagent with supertest
+
+const base = "​http://localhost:8999";
 
 describe("API test /api/signup", function () {
   describe("POST /api/test", function () {
     it("should return status code 200", async function () {
       const response = await superagent
-        .post("https://localhost:8999/api/signup")
+        .post("http://localhost:8999/api/signup")
         .trustLocalhost()
         .send({
           email: `${Math.random().toString(36).slice(2)}@random.it`,
@@ -21,7 +24,7 @@ describe("API test /api/signup", function () {
 
     it("should have user role,id,username,email",async function(){
         const response = await superagent
-        .post("https://localhost:8999/api/signup")
+        .post("http://localhost:8999/api/signup")
         .trustLocalhost()
         .send({
           email: `${Math.random().toString(36).slice(2)}@random.it`,
@@ -38,7 +41,7 @@ describe("API test /api/signup", function () {
     it("should give me a bad request on invalid email",async function(){
         try{
             const response = await superagent
-            .post("https://localhost:8999/api/signup")
+            .post("http://localhost:8999/api/signup")
             .trustLocalhost()
             .send({
               email: ``,
@@ -55,7 +58,7 @@ describe("API test /api/signup", function () {
     it("should give me a bad request on already existing email ",async function(){
         try{
             const response = await superagent
-            .post("https://localhost:8999/api/signup")
+            .post("http://localhost:8999/api/signup")
             .trustLocalhost()
             .send({
               email: `test@test.it`,

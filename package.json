@@ -5,6 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
+    "clear": "node ./testing-utils/delete-files.js ./log.txt ./test-json-database.json",
     "start:dev": "SET NODE_ENV=dev && tsnd --respawn --debug --files server.ts --watch **/*.ts",
     "start:test": "SET NODE_ENV=test && tsnd --respawn --debug --files server.ts --watch **/*.ts",
     "build": "tsc",

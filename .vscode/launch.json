@@ -12,16 +12,19 @@
       ],
       "type": "node",
       "request": "launch",
-      "name": "Debug TS Server",
+      "name": "Debug delete-files.js",
       "skipFiles": [
         "<node_internals>/**",
         "**/node_modules/**",
         "${workspaceFolder}/src/index.ts"
       ],
-      "program": "${workspaceFolder}/server.ts",
-      "outFiles": ["${workspaceFolder}/**/*.js"],
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "start:dev"]
+      "program": "${workspaceFolder}/testing-utils/delete-files.js",
+      "runtimeExecutable": "node",
+    
+      "args": [
+        "${workspaceFolder}/testing-utils/text.json",
+        "${workspaceFolder}/testing-utils/text.txt"
+      ]
     }
   ]
 }
