@@ -1,7 +1,6 @@
 import jwt from "jsonwebtoken";
 import fs from "fs";
 import path from "path";
-import { promisify } from "util";
 import { IUserLoginResponse } from "../models/Login/login.response.interface";
 const private_key = fs.readFileSync(
   path.join(__dirname, "../../rsa-keys", "private.pem")
