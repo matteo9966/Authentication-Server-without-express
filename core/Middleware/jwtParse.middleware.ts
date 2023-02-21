@@ -2,6 +2,7 @@ import { Middleware } from "../../Pipeline/core/Middleware.types";
 import httpErrors from "http-errors";
 import { verifyJWT } from "../utils/jwtValidation";
 import { JwtPayload } from "jsonwebtoken";
+import cookie from 'cookie';
 import _ from "lodash";
 import { IUserLoginResponse } from "../models/Login/login.response.interface";
 /**
@@ -11,7 +12,9 @@ import { IUserLoginResponse } from "../models/Login/login.response.interface";
  * @returns 
  */
 export const jwtParseMiddleware: Middleware = async (request, respone) => {
-    const cookies = request.cookies;
+    // const cookies = request.cookies; //qui non c'+ nulla
+    const cookies = cookie.parse(request.headers.cookie||"");
+
     const jwt =_.has(cookies, 'SESSION_ID')? request?.cookies["SESSION_ID"] : null;
  
     let userSession:IUserLoginResponse|null=null;
@@ -32,6 +35,10 @@ export const jwtParseMiddleware: Middleware = async (request, respone) => {
       throw new Error("wrong jwt format");
     }
   } catch (error) {
+    //TODO_ vedere qui che fare
+    // if(error instanceof Error){
+    //   throw httpErrors.BadRequest(error.message)
+    // }
     console.log(" ~ file: jwtParse.middleware.ts:32 ~ constjwtParseMiddleware:Middleware= ~ error: ", error)
     
     request.user=null; // va al successivo

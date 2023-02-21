@@ -26,6 +26,8 @@ import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middlewar
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
 import { AddressInfo } from "net";
 import http from "http";
+import { refreshController } from "./core/controllers/RefreshController/refresh.controller";
+import { whoamiController } from "./core/controllers/whoamiController/whoami.controller";
 //creo un server https
 
 dotenv.config();
@@ -83,10 +85,10 @@ pipeline
   .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
-pipeline.route("/api/user").get(userController);
 pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
+pipeline.route("/api/refresh").post(refreshController)
 pipeline
   .route("/api/admin/users")
   .get(
@@ -95,6 +97,8 @@ pipeline
     checkIfAuthorized(["ADMIN"]),
     getAllUsersController
   );
+
+pipeline.route('/api/whoami').get(jwtParseMiddleware,whoamiController)
 
 pipeline
   .route("/api/admin/as-user")

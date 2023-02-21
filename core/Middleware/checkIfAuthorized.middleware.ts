@@ -12,7 +12,7 @@ export function checkIfAuthorized(allowedRoles: (keyof typeof UserRoles)[]): Mid
       );
     }
     const roles = user.roles;
-    console.log({user},roles)
+  
     if (_.intersection(roles, allowedRoles).length > 0) {
       return true;
     } else {

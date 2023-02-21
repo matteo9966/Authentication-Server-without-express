@@ -16,7 +16,7 @@ const cookieFactory = (response: ServerResponse) => {
     if(cookies && typeof cookies==='string'){
       responseCookies.push(cookies)
     }
-   console.log(cookies,typeof cookies,_.isArray(cookies));
+
     response.setHeader("Set-Cookie",[...responseCookies,cookie.serialize(name, value, options)]);
   };
   const clearcookie = (cookiename: string) => {
