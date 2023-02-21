@@ -23,6 +23,7 @@ import { jwtParseMiddleware } from "./core/Middleware/jwtParse.middleware";
 import { getAllUsersController } from "./core/controllers/AdminControllers/GetAllUsersController/getAllUsers.controller";
 import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
+import { refreshController } from "./core/controllers/RefreshController/refresh.controller";
 //creo un server https
 const httpsServer = https.createServer({
   key: fs.readFileSync("./key.pem"),
@@ -49,16 +50,9 @@ pipeline.listen(9000, () => {
   console.log("listening on 9000");
 });
 
-// pipeline
-//   .route("/api/lessons")
-//   .get(
-//     checkIfAuthenticated,
-//     checkIfAuthorized(["ADMin"]),
-//     readAllLessonsController
-//   );
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
-pipeline.route("/api/user").get(jwtParseMiddleware, userController);
+pipeline.route("/api/user").get(jwtParseMiddleware,checkIfAuthenticatedMiddleware, userController);
 pipeline
   .route("/api/food")
   .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
@@ -67,6 +61,7 @@ pipeline.route("/api/login").post(loginController);
 pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
+pipeline.route("/api/refresh").post(refreshController)
 pipeline
   .route("/api/admin/users")
   .get(

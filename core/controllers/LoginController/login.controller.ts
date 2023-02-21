@@ -7,6 +7,7 @@ import httpError from "http-errors";
 import argon2 from "argon2";
 import { IUserLoginResponse } from "../../models/Login/login.response.interface";
 import { createJWT } from "../../utils/jwtValidation";
+import { createRefreshToken } from "../../utils/jwtRefresh";
 export const loginController: Middleware = async (request, response) => {
   const requestLogin: loginRequest = request.body as loginRequest;
   if (!requestLogin?.email || !requestLogin?.password) {
@@ -36,8 +37,10 @@ export const loginController: Middleware = async (request, response) => {
     }
     
     const jsontoken = await createJWT(loginResponse);
-    if(jsontoken){
+    const refreshtoken = await createRefreshToken(loginResponse.email);
+    if(jsontoken && refreshtoken){
       response.cookie('SESSION_ID',jsontoken,{path:'/'});
+      response.cookie('REFRESH_TOKEN',refreshtoken,{path:'/'});
 
     }else{
       throw new Error('errore creazione token')

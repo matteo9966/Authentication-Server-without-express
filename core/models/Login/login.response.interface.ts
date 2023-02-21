@@ -1,5 +1,4 @@
+import { DbUserClear } from "../DbUser.interface";
 import { IUser } from "../User.interface";
-
-export interface IUserLoginResponse extends IUser{
-    id:string;
+export interface IUserLoginResponse extends DbUserClear{
 }
