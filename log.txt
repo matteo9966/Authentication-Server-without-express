@@ -83,3 +83,290 @@ BODY
 
                     
                     |--------------END------------|
+[Wed Feb 22 2023 08:44:58 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[host,127.0.0.1:50491
+accept-encoding,gzip, deflate
+connection,close
+content-length,0]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 08:46:19 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[host,127.0.0.1:50508
+accept-encoding,gzip, deflate
+connection,close
+content-length,0]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:09:38 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5ODg3NzUsImV4cCI6MTY3NzA3NTE3NX0.VaSR8tThBH0lUDx3TEoFyHucIzfI2XSa2JMbGDgg9I2vWTMEVzj9ORQvurpwOGTtHyV51M4z1Uf3J5uX19slEF1dsJpYv_P5cVf8kx6sxcGPlT0WNd1Y0D_zJQ1HLtCN8cwQpq8izvj43j8HbW7MhtwJ5JiETgKI-ytDw2Wyb7rE9QvCE4WiyAofp_d-tAeFkOb16rDSg9edUgUs48Bd0aauey_qGwfML_USODW8VE8NoKmKjwxSMFRh3t67Nitj3dzL7_sCHBur1r3mMw21QdblpuipGdW1pOZsOlDTGD6h69MQRODVKRg01KSErVF6Yb1z9Mk2iluvqYOb8GkTWQ;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk4ODc3NSwiZXhwIjoxNjc3MDc1MTc1fQ.RwhEj1kD2IqrUpaJL2nL0b_2-gOOk3oDzXLpcTDkSvUm00A6cnzQIFr3XoexU8bXjxlft2jy9ByzvuEqg-tQbx5UKpWe6jKIresoyhtoFHx4ACSDxQXRmfbC15kYE3wObSpzZ6-82h3upr5KWvuqx9UNLa0S7Q4eUZn2owjKTb1B-mewolh_4V2-CtLf9zh8irrEjF_YBuzoiR8IooM8iY8B5fcwCW_a7PhcHMHjgOFq_Mp2Sc9_Ph7MyJP4A24mg6XYtcHNS0-uHfhaAIh-tkwK2pHoE_T6SccuoSt7RanQRWdo1omh9uUNkpazEZ4RbSnqiK7_J_X1waulquWnxg
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:11:29 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,45
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:12:22 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:12:50 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,45
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:13:22 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,64
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"t@test.it","password":"Secret1","username":"userTest"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:13:37 GMT+0100]
+[/api/login]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,42
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"t@test.it","password":"Secret1"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:14:13 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw; Path=/, REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA; Path=/
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:14:36 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:8999]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:17:40 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:17:45 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:18:21 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:19:13 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Wed Feb 22 2023 10:19:22 GMT+0100]
+[/api/refresh]
+Cookies:
+[]
+Headers:
+[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
+content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|

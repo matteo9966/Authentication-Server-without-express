@@ -1,9 +1,9 @@
 // import { readAllLessonsController } from "./core/controllers/LessonsControllers/readAllLessons.controller";
 import { checkIfAuthenticatedMiddleware } from "./core/Middleware/checkIfAuthenticated.middleware";
-import dotenv from 'dotenv';
+import dotenv from "dotenv";
 // import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { jsonMiddleWare } from "./Pipeline/core/middleware/json.middleware";
-import { pipelineServer } from "./Pipeline/Pipeline";
+import { PipelineServer, pipelineServer } from "./Pipeline/Pipeline";
 import * as https from "https";
 import * as fs from "fs";
 import { signupUserController } from "./core/controllers/SignupController/signup.controller";
@@ -25,23 +25,18 @@ import { getAllUsersController } from "./core/controllers/AdminControllers/GetAl
 import { checkIfAuthorized } from "./core/Middleware/checkIfAuthorized.middleware";
 import { loginAsUserController } from "./core/controllers/AdminControllers/LoginAsUserController/loginAsUSer.controller";
 import { AddressInfo } from "net";
-import http from "http";
+import http, { Server } from "http";
 import { refreshController } from "./core/controllers/RefreshController/refresh.controller";
 import { whoamiController } from "./core/controllers/whoamiController/whoami.controller";
 //creo un server https
 
 dotenv.config();
-const environment = (process.env.NODE_ENV)?.trim();
+const environment = process.env.NODE_ENV?.trim();
 
+const port =
+  environment === "dev" ? 9000 : environment === "test" ? 8999 : 8000;
 
-const port = environment === 'dev'? 9000 : environment === 'test'? 8999 : 8000
-
-
-
-export const httpsServer = serverFactory()
-
-
-
+export const httpsServer = serverFactory();
 
 httpsServer.on("request", (req, res) => {
   console.log("[REQUEST URL] ", req.url);
@@ -49,7 +44,7 @@ httpsServer.on("request", (req, res) => {
 
 const pipeline = pipelineServer(httpsServer);
 
-if(environment && environment!=='prod'){ 
+if (environment && environment !== "test") {
   const logStream = writeSteamFactory(path.join(__dirname, "log.txt"));
   if (logStream) {
     pipeline.use(logMiddlewareFactory(logStream)); //questo è solo per lo sviluppo
@@ -59,15 +54,22 @@ if(environment && environment!=='prod'){
   }
 }
 
-
 pipeline.use(allowCorsMiddleware);
 pipeline.use(jsonMiddleWare); //l'ordine è importante questo json middleware aggiunge il metodo json al response e fa il parse del body
 pipeline.use(cookieMiddleware);
 
-pipeline.listen(port, () => {
-});
+pipeline.listen(port, () => {});
 
-pipeline.server.on('listening',()=>console.log("LISTENING ON PORT: ",(<AddressInfo>pipeline.server?.address()).port,'\n','ENVIRONMENT: ',environment,{protocol:environment==='test'?'http':'https'}))
+pipeline.server.on("listening", () =>
+  console.log(
+    "LISTENING ON PORT: ",
+    (<AddressInfo>pipeline.server?.address()).port,
+    "\n",
+    "ENVIRONMENT: ",
+    environment,
+    { protocol: environment === "test" ? "http" : "https" }
+  )
+);
 
 // pipeline
 //   .route("/api/lessons")
@@ -76,7 +78,10 @@ pipeline.server.on('listening',()=>console.log("LISTENING ON PORT: ",(<AddressIn
 //     checkIfAuthorized(["ADMin"]),
 //     readAllLessonsController
 //   );
-pipeline.route("/api/test").get(async (req, res) => {res.statusCode=200;res.end()}); // un endpoint solo per scrivere un test
+pipeline.route("/api/test").get(async (req, res) => {
+  res.statusCode = 200;
+  res.end();
+}); // un endpoint solo per scrivere un test
 pipeline.route("/api/signup").post(signupUserController);
 pipeline.route("/api/signup/verify-email").post(emailExistsController);
 pipeline.route("/api/user").get(jwtParseMiddleware, userController);
@@ -88,7 +93,7 @@ pipeline.route("/api/login").post(loginController);
 pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
-pipeline.route("/api/refresh").post(refreshController)
+pipeline.route("/api/refresh").post(refreshController);
 pipeline
   .route("/api/admin/users")
   .get(
@@ -98,7 +103,7 @@ pipeline
     getAllUsersController
   );
 
-pipeline.route('/api/whoami').get(jwtParseMiddleware,whoamiController)
+pipeline.route("/api/whoami").get(jwtParseMiddleware, whoamiController);
 
 pipeline
   .route("/api/admin/as-user")
@@ -109,18 +114,29 @@ pipeline
     loginAsUserController
   );
 
-  const server = httpsServer
-  export {pipeline,server}
+const server = httpsServer;
+export { pipeline, server };
 
+//TODO : ragiona su questo per avere un unico server che ascolta
+// export async function promisedPipeline(
+//   pipeline: PipelineServer
+// ): Promise<
+//   http.Server<typeof http.IncomingMessage, typeof http.ServerResponse>
+// > {
+//   return new Promise((resolve, reject) => {
+//     pipeline.listen(port, () => {
+//       resolve(pipeline.server);
+//     });
+//   });
+// }
 
-
-  function serverFactory() {
-    // if (environment !== "test") {
-    //   return https.createServer({
-    //     key: fs.readFileSync("./key.pem"),
-    //     cert: fs.readFileSync("./cert.pem"),
-    //   });
-    // } else {
-    // }
+function serverFactory() {
+  if (environment !== "test") {
+    return https.createServer({
+      key: fs.readFileSync("./key.pem"),
+      cert: fs.readFileSync("./cert.pem"),
+    });
+  } else {
     return http.createServer();
   }
+}

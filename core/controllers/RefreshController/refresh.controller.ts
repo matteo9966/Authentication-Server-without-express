@@ -9,13 +9,14 @@ import { createJWT } from "../../utils/jwtValidation";
 export const refreshController: Middleware = async (request, response) => {
   //prendo il SESSION_ID dal cookie,
   //se non è valido gliene mando uno nuovo
-
+ 
   const cookies = cookie.parse(request.headers.cookie || "");
   
   if (!_.has(cookies, "SESSION_ID")) {
     response.statusCode = 206;
     response.statusMessage="missing SESSION_ID"
      response.write("missing SESSION_ID");
+     
      response.end();
      return
   }
@@ -57,12 +58,14 @@ export const refreshController: Middleware = async (request, response) => {
     const sessionToken  = await createJWT(sessionIdPayload);
 
     response.cookie('SESSION_ID',sessionToken||"");
-    
+    response.cookie('REFRESH_TOKEN',refreshToken||"");
     response.statusCode=201;
+   
     response.end();
     
     //ora devo creare il nuovo sessionId
   } catch (error) {
+
     console.log(error);
     if (error instanceof Error) {
       throw httpErrors.BadRequest(error.message);

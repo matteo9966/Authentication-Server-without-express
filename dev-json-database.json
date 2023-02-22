@@ -1,0 +1,13 @@
+{
+    "user": {
+        "t@test.it": {
+            "email": "t@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$x2Rzr6ZhIo32Xef7klaAaA$A7++KpkDdNLFU+HXg3+lJB3z+Ar9/CnLC65289RWn10",
+            "id": "9p8yfshp6jj",
+            "roles": [
+                "USER"
+            ],
+            "username": "userTest"
+        }
+    }
+}
