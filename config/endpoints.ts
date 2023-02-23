@@ -6,6 +6,7 @@ export const endpoints = {
   LOGOUT_URL: "",
   USER_URL: "",
   VERIFY_EMAIL_URL: "",
-  SIGNUP: "",
+  SIGNUP_URL: "",
+  WHOAMI_URL:"/whoami"
 };
 

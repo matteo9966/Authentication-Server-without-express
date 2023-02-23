@@ -4,6 +4,6 @@
     "require":"ts-node/register",
     "reporter":"spec",
     "timeout":5000,
-    "watchFiles":"**/*.test.ts",
+    "watchFiles":["**/*.test.ts","./test-config.ts"],
     "watch":true
 }

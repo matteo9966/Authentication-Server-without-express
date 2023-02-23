@@ -33,12 +33,14 @@ import { whoamiController } from "./core/controllers/whoamiController/whoami.con
 dotenv.config();
 const environment = process.env.NODE_ENV?.trim();
 
+if (environment != "dev") {
+  console.log = () => {};
+}
+
 const port =
   environment === "dev" ? 9000 : environment === "test" ? 8999 : 8000;
 
 export const httpsServer = serverFactory();
-
-
 
 httpsServer.on("request", (req, res) => {
   console.log("[REQUEST URL] ", req.url);
@@ -60,7 +62,9 @@ pipeline.use(allowCorsMiddleware);
 pipeline.use(jsonMiddleWare); //l'ordine è importante questo json middleware aggiunge il metodo json al response e fa il parse del body
 pipeline.use(cookieMiddleware);
 
-pipeline.listen(port, () => {});
+if (environment !== "test") {
+  pipeline.listen(port, () => {});
+}
 
 pipeline.server.on("listening", () =>
   console.log(
@@ -140,5 +144,3 @@ function serverFactory() {
     return http.createServer();
   }
 }
-
-
