@@ -27,4 +27,8 @@ SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIs
 
 # Testing
 I finally started adding some tests to the api using mocha chai and supertest,
-for now i only added tests to the refresh token endpoint
+The test cover these endpoints:
+
+- /api/refresh
+- /api/whoami 
+
