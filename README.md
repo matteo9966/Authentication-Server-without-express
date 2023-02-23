@@ -31,4 +31,5 @@ The test cover these endpoints:
 
 - /api/refresh
 - /api/whoami 
+- /api/login
 
