@@ -4,6 +4,7 @@ import supertest from "supertest";
 import { createRefreshToken } from "./core/utils/jwtRefresh";
 import { createJWT } from "./core/utils/jwtValidation";
 import * as testconfig from "./test-config";
+import { IUserLoginResponse } from "./core/models/Login/login.response.interface";
 
 const INVALID_REFRESH =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
@@ -73,41 +74,87 @@ describe.only("Test all server endpoints", function () {
 
   describe("POST /api/login", function () {
     it("should return unauthorized if no email is sent to user", async function () {
-      const badUser = testconfig.MOCK_BAD_LOGIN_USER
-      badUser.email="";
+      const badUser = testconfig.MOCK_BAD_LOGIN_USER;
+      badUser.email = "";
       badUser.password = "1234";
       const response = await testconfig.postLogin().send(badUser);
-      expect(response.status).to.equal(401)
+      expect(response.status).to.equal(401);
     });
     it("should return unauthorized if no pasword is sent to user", async function () {
-      const badUser = testconfig.MOCK_BAD_LOGIN_USER
-      badUser.email="mail@mail.com";
+      const badUser = testconfig.MOCK_BAD_LOGIN_USER;
+      badUser.email = "mail@mail.com";
       badUser.password = "";
       const response = await testconfig.postLogin().send(badUser);
-      expect(response.status).to.equal(401)
+      expect(response.status).to.equal(401);
     });
     it("should return unauthorized if email does not exist", async function () {
-      const badUser = testconfig.MOCK_BAD_LOGIN_USER
-      badUser.email="mail@mail.com";
+      const badUser = testconfig.MOCK_BAD_LOGIN_USER;
+      badUser.email = "mail@mail.com";
       badUser.password = "some strange password";
       const response = await testconfig.postLogin().send(badUser);
-      expect(response.status).to.equal(401)
+      expect(response.status).to.equal(401);
     });
     it("should return unauthorized if user exists but password is wrong", async function () {
-      const badUser = testconfig.MOCK_BAD_LOGIN_USER
-      badUser.email="test@test.com";
+      const badUser = testconfig.MOCK_BAD_LOGIN_USER;
+      badUser.email = "test@test.com";
       badUser.password = "some strange password";
       const response = await testconfig.postLogin().send(badUser);
-      expect(response.status).to.equal(401)
+      expect(response.status).to.equal(401);
     });
     it("should return SESSION_ID and REFRESH_TOKEN if user exists and password is right", async function () {
-      const goodUser = testconfig.MOCK_GOOD_LOGIN_USER
-     
+      const goodUser = testconfig.MOCK_GOOD_LOGIN_USER;
+
       const response = await testconfig.postLogin().send(goodUser);
-      expect(response.status).to.equal(200)
+      expect(response.status).to.equal(200);
       expect(response.headers["set-cookie"]).to.have.length(2);
-      expect(response.headers["set-cookie"].join('')).to.include("SESSION_ID");
-      expect(response.headers["set-cookie"].join('')).to.include("REFRESH_TOKEN");
+      expect(response.headers["set-cookie"].join("")).to.include("SESSION_ID");
+      expect(response.headers["set-cookie"].join("")).to.include(
+        "REFRESH_TOKEN"
+      );
+    });
+  });
+
+  describe("POST /api/signup", function () {
+    it("should respond with bad request if i dont provide email or password or username", async function () {
+      const response = await testconfig.postSignup().send(testconfig.MOCK_BAD_SIGNUP_USER)
+      expect(response.status).to.equal(400)
+    });
+    it("invalid password should return bad request", async function () {
+      const badUser = {...testconfig.MOCK_BAD_SIGNUP_USER}
+      badUser.email="test@test.t";
+      badUser.password="pa";
+      badUser.roles=['USER'];
+      badUser.username="username1";
+      const response = await testconfig.postSignup().send(badUser)
+      expect(response.status).to.equal(400)
+    });
+    
+    it("invalid email format should return bad request", async function () {
+      const badUser = {...testconfig.MOCK_BAD_SIGNUP_USER}
+      badUser.email="test@test.t";
+      badUser.password="pa";
+      badUser.roles=['USER'];
+      badUser.username="username1";
+      const response = await testconfig.postSignup().send(badUser)
+      expect(response.status).to.equal(400)
+
+    });
+    it("email already exists should return bad request", async function () {
+      const badUser = {...testconfig.MOCK_BAD_SIGNUP_USER}
+      badUser.email="test@test.it"; //already exists
+      badUser.password="Sectre111!";
+      badUser.roles=['USER'];
+      badUser.username="username1";
+      const response = await testconfig.postSignup().send(badUser)
+      expect(response.status).to.equal(400)
+    });
+
+    it("valid user request should return a valid body and status 201", async function () {
+      const validUser = testconfig.createGoodSignupUser();
+      const response = await testconfig.postSignup().send(validUser)
+      expect(response.status).to.equal(201)
+      expect(response.body).to.have.all.keys('email','id','roles','username');
+      expect((<IUserLoginResponse>response.body).email).to.equal(validUser.email)
     });
   });
 });

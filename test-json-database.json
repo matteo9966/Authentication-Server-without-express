@@ -62,6 +62,33 @@
                 "USER"
             ],
             "username": "random-user"
+        },
+        "pztjglh2zxm@test.it": {
+            "email": "pztjglh2zxm@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$PEMzj45AQF2TOiSkoKZ6Lg$Ij/VzgAuL9eELLIXsQ5p7k8Iur+oTotiZp/MVgOVxNQ",
+            "id": "h96vdgjr9si",
+            "roles": [
+                "USER"
+            ],
+            "username": "1s4tsjn5jo3"
+        },
+        "rj9psoicprh@test.it": {
+            "email": "rj9psoicprh@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$hdX4PRWqW3I5eLMfsXc34w$jIIMrRk7rAhtdTRHyvWUkI4OEQbfUxAgh7L0C/DBp0g",
+            "id": "vn4f31o54cn",
+            "roles": [
+                "USER"
+            ],
+            "username": "ukd4mlbt1m"
+        },
+        "2am1eeaz98o@test.it": {
+            "email": "2am1eeaz98o@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$XD7hi0mkyOu9JRKFIQO4Hg$HPU9bz4EzHmFVW1oZt6jT1oXbTeXAQzlwCRcf0z3g0c",
+            "id": "610zzdmgvyh",
+            "roles": [
+                "USER"
+            ],
+            "username": "iycy0ty85np"
         }
     }
 }

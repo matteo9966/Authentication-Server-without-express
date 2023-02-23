@@ -74,7 +74,7 @@ export const signupUserController: Middleware = async (request, response) => {
     username:dbUser.username
 
   }
-
+  response.statusCode=201;
   response.json(newUser)
 
 };
