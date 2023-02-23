@@ -10,7 +10,7 @@ import { signupUserController } from "./core/controllers/SignupController/signup
 import { emailExistsController } from "./core/controllers/ValidationControllers/emailExists.controller";
 import { cookieMiddleware } from "./Pipeline/core/middleware/cookie.middleware";
 import { allowCorsMiddleware } from "./Pipeline/core/middleware/cors.middleware";
-
+import { endpoints } from "./config/endpoints";
 import {
   logMiddlewareFactory,
   writeSteamFactory,
@@ -37,6 +37,8 @@ const port =
   environment === "dev" ? 9000 : environment === "test" ? 8999 : 8000;
 
 export const httpsServer = serverFactory();
+
+
 
 httpsServer.on("request", (req, res) => {
   console.log("[REQUEST URL] ", req.url);
@@ -88,8 +90,6 @@ pipeline.route("/api/user").get(jwtParseMiddleware, userController);
 pipeline
   .route("/api/food")
   .get(jwtParseMiddleware, checkIfAuthenticatedMiddleware, getFoodController);
-pipeline.route("/api/logout").post(logoutController);
-pipeline.route("/api/login").post(loginController);
 pipeline.route("/api/food").get(getFoodController);
 pipeline.route("/api/logout").post(logoutController);
 pipeline.route("/api/login").post(loginController);
@@ -140,3 +140,5 @@ function serverFactory() {
     return http.createServer();
   }
 }
+
+

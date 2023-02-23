@@ -25,6 +25,24 @@
         "${workspaceFolder}/testing-utils/text.json",
         "${workspaceFolder}/testing-utils/text.txt"
       ]
+    },
+    {
+      "resolveSourceMapLocations": [
+        "${workspaceFolder}/**",
+        "!**/node_modules/**"
+      ],
+      "type": "node",
+      "request": "launch",
+      "name": "Debug TS Server",
+      "skipFiles": [
+        "<node_internals>/**",
+        "**/node_modules/**",
+        "${workspaceFolder}/src/index.ts"
+      ],
+      "program": "${workspaceFolder}/server.ts",
+      "outFiles": ["${workspaceFolder}/**/*.js"],
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "start:dev"]
     }
   ]
 }
