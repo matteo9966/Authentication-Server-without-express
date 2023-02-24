@@ -157,4 +157,19 @@ describe.only("Test all server endpoints", function () {
       expect((<IUserLoginResponse>response.body).email).to.equal(validUser.email)
     });
   });
+
+  describe('POST /signup/verify-email',function(){
+    it('should return {exists:false} if the email does not exist in db',async function (){
+      const notExistingEmailPayload = testconfig.createRandomEmailSignupPayload();
+      const response = await testconfig.postVerifyEmailSignup().send(notExistingEmailPayload)
+      expect(response.status).to.equal(200)
+      expect(response.body).to.include({"exists": false})
+    })
+    it('should return {exists:true} if the email does exist in db',async function (){
+      const existingEmailPayload = testconfig.MOCK_EXISTING_EMAIL_VERIFY;
+      const response = await testconfig.postVerifyEmailSignup().send(existingEmailPayload)
+      expect(response.status).to.equal(200)
+      expect(response.body).to.deep.equal({"exists": true})
+    })
+  })
 });

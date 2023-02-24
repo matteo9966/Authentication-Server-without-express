@@ -24,7 +24,7 @@ export const loginController: Middleware = async (request, response) => {
   //ho user
 
   const paswordDigest = user.passwordDigest;
-
+  console.log(paswordDigest)
   try {
     if (await argon2.verify(paswordDigest, requestLogin.password)) {
        //restituisci lo user
@@ -51,7 +51,7 @@ export const loginController: Middleware = async (request, response) => {
       // password match
     } else {
       // password did not match
-      
+      console.log(requestLogin)
       throw new Error("passoword sbagliata")
     }
 } catch (err) {

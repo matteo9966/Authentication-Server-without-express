@@ -1,81 +1,112 @@
-[Tue Feb 21 2023 18:41:54 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:45:54 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[host,127.0.0.1:8999
-accept-encoding,gzip, deflate
-connection,close]
-
-BODY 
-
-          
-
-                    
-                    |--------------END------------|
-[Tue Feb 21 2023 18:44:52 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[content-type,application/json; charset=utf-8
-accept,*/*
-content-length,0
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,23
 connection,close
-host,localhost:8999]
+host,localhost:4200]
 
 BODY 
 
-          
+          {"email":"test@test.i"}
 
                     
                     |--------------END------------|
-[Tue Feb 21 2023 18:45:00 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:45:55 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[content-type,application/json; charset=utf-8
-accept,*/*
-content-length,0
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,21
 connection,close
-host,localhost:8999]
+host,localhost:4200]
 
 BODY 
 
-          
+          {"email":"test@test"}
 
                     
                     |--------------END------------|
-[Tue Feb 21 2023 18:45:59 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:45:59 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[host,127.0.0.1:8999
-accept-encoding,gzip, deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,18
 connection,close
-content-length,0]
+host,localhost:4200]
 
 BODY 
 
-          
+          {"email":"m@t.it"}
 
                     
                     |--------------END------------|
-[Tue Feb 21 2023 18:46:20 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:47:59 GMT+0100]
+[/api/user]
 Cookies:
 []
 Headers:
-[host,127.0.0.1:8999
-accept-encoding,gzip, deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
 connection,close
-content-length,0]
+host,localhost:4200]
 
 BODY 
 
@@ -83,31 +114,235 @@ BODY
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 08:44:58 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:48:05 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[host,127.0.0.1:50491
-accept-encoding,gzip, deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,22
 connection,close
-content-length,0]
+host,localhost:4200]
 
 BODY 
 
-          
+          {"email":"ada@ada.it"}
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 08:46:19 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:48:08 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[host,127.0.0.1:50508
-accept-encoding,gzip, deflate
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,23
 connection,close
-content-length,0]
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aada.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:10 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,26
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aaaaada.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:12 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,27
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aaaaadda.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:12 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,28
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aaaaaddda.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:13 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,31
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aaaaadddddda.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:13 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,32
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@aaaaaddddddda.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:32 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
 
 BODY 
 
@@ -115,34 +350,512 @@ BODY
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 10:09:38 GMT+0100]
-[/api/refresh]
+[Fri Feb 24 2023 15:48:40 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5ODg3NzUsImV4cCI6MTY3NzA3NTE3NX0.VaSR8tThBH0lUDx3TEoFyHucIzfI2XSa2JMbGDgg9I2vWTMEVzj9ORQvurpwOGTtHyV51M4z1Uf3J5uX19slEF1dsJpYv_P5cVf8kx6sxcGPlT0WNd1Y0D_zJQ1HLtCN8cwQpq8izvj43j8HbW7MhtwJ5JiETgKI-ytDw2Wyb7rE9QvCE4WiyAofp_d-tAeFkOb16rDSg9edUgUs48Bd0aauey_qGwfML_USODW8VE8NoKmKjwxSMFRh3t67Nitj3dzL7_sCHBur1r3mMw21QdblpuipGdW1pOZsOlDTGD6h69MQRODVKRg01KSErVF6Yb1z9Mk2iluvqYOb8GkTWQ;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk4ODc3NSwiZXhwIjoxNjc3MDc1MTc1fQ.RwhEj1kD2IqrUpaJL2nL0b_2-gOOk3oDzXLpcTDkSvUm00A6cnzQIFr3XoexU8bXjxlft2jy9ByzvuEqg-tQbx5UKpWe6jKIresoyhtoFHx4ACSDxQXRmfbC15kYE3wObSpzZ6-82h3upr5KWvuqx9UNLa0S7Q4eUZn2owjKTb1B-mewolh_4V2-CtLf9zh8irrEjF_YBuzoiR8IooM8iY8B5fcwCW_a7PhcHMHjgOFq_Mp2Sc9_Ph7MyJP4A24mg6XYtcHNS0-uHfhaAIh-tkwK2pHoE_T6SccuoSt7RanQRWdo1omh9uUNkpazEZ4RbSnqiK7_J_X1waulquWnxg
-content-type,application/json; charset=utf-8
-accept,*/*
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,17
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:42 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,19
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.T"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:42 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,20
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:43 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
 content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
 connection,close
-host,localhost:8999]
+host,localhost:4200]
 
 BODY 
 
-          {"email":"test@test.it"}
+          {"email":"AAA@A.TTTTTT"}
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 10:11:29 GMT+0100]
-[/api/login]
+[Fri Feb 24 2023 15:48:43 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,25
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:43 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,26
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:44 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,29
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:49 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,30
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:49 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,31
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTTTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 15:48:50 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,33
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"AAA@A.TTTTTTTTTTTTTTT"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:02:35 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:02:37 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:02:56 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,17
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"t@t.t"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:03:00 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,21
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"t@t.ttttt"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:03:03 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,32
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"t@t.tttttttttttttttt"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:03:20 GMT+0100]
+[/api/user]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:04:20 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[cookie,XSRF-TOKEN=HXZ2GH7DuPn0f1BGXPIOZJlhf5x4Xw8KCPwZEr9pat4%3D; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4NTAsImV4cCI6MTY3Njk5Njg2MH0.VMjRDpRx2i_Jb9tmP5D9qUCkFTY1B8RUB95Dup_aMdefYPDddwBLpkqB0spp5BMeKfOUNvmgsbNDK0BFtrdrH9Yi-R_Lr7yg1jUcjScNEMhpabx8knBDCYnEXORBziBvwc_O9nrDSpEERYnIM1TJbODJdlp3IUsEY-o4skexi7rOEnAzoZEIZY8PQ0MrO5C0Tvv1taeLLSx1qM3pRqQdiHq8ll91v7bY8PgXmHL8rrJpe9qGHfc48dKhBqYR4Tlaf-K4j7Z8Vrw4iM3eXjPcAVjskCx91EPGv3M56dvG9Ku6HEURqq7E9sNe-UKwrJWDQqkqkgtJLmbWIs4gPQePaw; SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlkIjoiZ251MGFkdGRzdHAiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzY5OTY4MzgsImV4cCI6MTY3Njk5Njg0OH0.oqJ7P55kBmW8YJVDNrdCRR7lfmSWKXotIhC-lajvLPu1cGfbR8QJSmudpRR8IwmoG5MIlQ7VDXMjjE1sCMlH-LNgD4UBgnEwY37sDQwdHNCWXhP2DJ4PmqgpfRLWKGDZPwPIwobHkHl41wfrgo57rG_Gh4-w5W9WdX1RtSEWAOJ3taJPzOl5o57mJ4Kver9iVz5JJSUD-hhAz4Ot6VjMRxvjo_LZ-HoMzI0A45t09kwZQjO4KWEexDxHclFlfwjtp9WNhO2OSlFW44WTIwVdshmGJFuE7qjKzep8tvs0u27pJZ0gmOd2PyWGGcuyBW-Nk_rzsZfIqiIJzIXnIJkMdw; REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRlc3RAdGVzdC5pdCIsImlhdCI6MTY3Njk5NjgzOCwiZXhwIjoxNjc3MDgzMjM4fQ.UC8OTL9cYCvv83pgJdcX5txGzYIyo6MlDCYNzAvI2MwsBfRE063rz-C_hzQrrR29OGy-43V8AVdUDCedL7B8_aU37ecWbBcTc6bNsqdFk4v44uAiImLz9lIpZOzT9itK_8cy8q34sXpeaxRRGEhZR-5_9kWAmqSIjC0oQPZcMRG9oweFDJJtKViNWaoDNqs966PP2SxyVQC6tS8bWWL1TPOkMJq5gFnXg99ShAQ1qQKLpTFHogJ72yWRy3Lw6ALOAng-ojfC2Oq-YW-at1q0B7Bab21bZgrakeI4vqU8MWSwjg8-dhkh1ZdxtaimZxlHOR67RF14_dkSTA6fwLw-lQ
+accept-language,it-IT,it;q=0.9,en-US;q=0.8,en;q=0.7
+accept-encoding,gzip, deflate, br
+referer,https://localhost:4200/signup
+sec-fetch-dest,empty
+sec-fetch-mode,cors
+sec-fetch-site,same-origin
+origin,https://localhost:4200
+sec-ch-ua-platform,"Windows"
+user-agent,Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36
+sec-ch-ua-mobile,?0
+skipinterceptor,true
+content-type,application/json
+accept,application/json, text/plain, */*
+sec-ch-ua,"Chromium";v="110", "Not A(Brand";v="24", "Google Chrome";v="110"
+content-length,22
+connection,close
+host,localhost:4200]
+
+BODY 
+
+          {"email":"ada@ada.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:16:21 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
 [content-type,application/json; charset=utf-8
 accept,*/*
-content-length,45
+content-length,19
 user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
 accept-encoding,gzip,deflate
 connection,close
@@ -150,38 +863,18 @@ host,localhost:9000]
 
 BODY 
 
-          {"email":"test@test.it","password":"Secret1"}
+          {"email":"ma@t.it"}
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 10:12:22 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:8999]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:12:50 GMT+0100]
-[/api/login]
+[Fri Feb 24 2023 16:16:26 GMT+0100]
+[/api/signup/verify-email]
 Cookies:
 []
 Headers:
 [content-type,application/json; charset=utf-8
 accept,*/*
-content-length,45
+content-length,18
 user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
 accept-encoding,gzip,deflate
 connection,close
@@ -189,18 +882,246 @@ host,localhost:9000]
 
 BODY 
 
-          {"email":"test@test.it","password":"Secret1"}
+          {"email":"m@t.it"}
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 10:13:22 GMT+0100]
+[Fri Feb 24 2023 16:19:24 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:20:53 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:22:11 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:22:21 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:23:25 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:23:32 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:28:04 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:28:44 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:30:52 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:33:03 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:36:21 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:36:54 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:51:01 GMT+0100]
 [/api/signup]
 Cookies:
 []
 Headers:
 [content-type,application/json; charset=utf-8
 accept,*/*
-content-length,64
+content-length,67
 user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
 accept-encoding,gzip,deflate
 connection,close
@@ -208,18 +1129,94 @@ host,localhost:9000]
 
 BODY 
 
-          {"email":"t@test.it","password":"Secret1","username":"userTest"}
+          {"email":"test@test.it","password":"Secret1","username":"userTest"}
 
                     
                     |--------------END------------|
-[Wed Feb 22 2023 10:13:37 GMT+0100]
+[Fri Feb 24 2023 16:53:13 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:53:21 GMT+0100]
+[/api/signup]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,67
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it","password":"Secret1","username":"userTest"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:54:48 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,24
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@test.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 16:54:54 GMT+0100]
+[/api/signup/verify-email]
+Cookies:
+[]
+Headers:
+[content-type,application/json; charset=utf-8
+accept,*/*
+content-length,25
+user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
+accept-encoding,gzip,deflate
+connection,close
+host,localhost:9000]
+
+BODY 
+
+          {"email":"test@tesit.it"}
+
+                    
+                    |--------------END------------|
+[Fri Feb 24 2023 17:04:44 GMT+0100]
 [/api/login]
 Cookies:
 []
 Headers:
 [content-type,application/json; charset=utf-8
 accept,*/*
-content-length,42
+content-length,45
 user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
 accept-encoding,gzip,deflate
 connection,close
@@ -227,146 +1224,7 @@ host,localhost:9000]
 
 BODY 
 
-          {"email":"t@test.it","password":"Secret1"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:14:13 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw; Path=/, REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA; Path=/
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:8999]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:14:36 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:8999]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:17:40 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:9000]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:17:45 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:9000]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:18:21 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:9000]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:19:13 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:9000]
-
-BODY 
-
-          {"email":"test@test.it"}
-
-                    
-                    |--------------END------------|
-[Wed Feb 22 2023 10:19:22 GMT+0100]
-[/api/refresh]
-Cookies:
-[]
-Headers:
-[cookie,SESSION_ID=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlkIjoiOXA4eWZzaHA2amoiLCJyb2xlcyI6WyJVU0VSIl0sInVzZXJuYW1lIjoidXNlclRlc3QiLCJpYXQiOjE2NzcwNTcyMTcsImV4cCI6MTY3NzA1NzIyN30.ZDqNwKGyLm97_WbqY9zb6eejs7cFedHDW-7lvJrlDRVKJBthH-apPt-KqoTlh3C9qK-pqs7gYgRbeiYeh5WC7zWSwmE41FR60kjwoxWheICF3BuWVyefce_qi58VJ0_MqGCECCWR14WdB985Ygd-4plw3lfc-0E_H4rn_lESx1EybyYVQB1MR473Ije5rZzhfc_PS8r-7B_NDHAkY6tuVPc7Ot5RZUthXvnxiK4OMfMmv-bKt44kBqEUxv7Cn2cIc_dwq7Yj8TQhjsTZqDqhtbKNWEfKMvQprQ1ZZAvi_rijkjrLOiqy84oVR29k2hsfM1F8W67qBOXuGLNB46qxCw;REFRESH_TOKEN=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRAdGVzdC5pdCIsImlhdCI6MTY3NzA1NzIxNywiZXhwIjoxNjc3MTQzNjE3fQ.oOnFFemht8SJEx1YfhMAsaJROMLuK7QE1RY1el-v7lGGWfvTLfycG8WXzV8STev4ldQWpzBPMJTHaPcG-0hTAePdnMiRoIIxU0IAsILoNraESiA5JgXS_aQJ4TNVtO8BGOE3GQHDrT5lk3K9j50x6irdRaFzgxYUTqj1eQDdgN6p5ExoTfDAun5-BbMjRTbKLCUGpE1bQXpstl1QsPvbgZiLuUKr7DpMUI6bBAdFjbaMo4pGRDGouwZs_MILZAGR7gAJXZr4y-95rqsledfENS1NW8EuVAeYhbJKcKpECFNn00fEZjHWQ_m63geIEPcXaM9DU-siANl_YunveIaoCA;
-content-type,application/json; charset=utf-8
-accept,*/*
-content-length,24
-user-agent,node-fetch/1.0 (+https://github.com/bitinn/node-fetch)
-accept-encoding,gzip,deflate
-connection,close
-host,localhost:9000]
-
-BODY 
-
-          {"email":"test@test.it"}
+          {"email":"test@test.it","password":"Secret1"}
 
                     
                     |--------------END------------|

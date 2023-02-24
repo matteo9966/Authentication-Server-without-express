@@ -1,3 +1,4 @@
+import createHttpError from "http-errors";
 import { Middleware } from "../../../Pipeline/core/Middleware.types";
 import { dbConnection } from "../../database/database.connection";
 import {
@@ -11,7 +12,7 @@ export const emailExistsController: Middleware = async (request, response) => {
     exists: false,
   };
   if (!email) {
-    response.json(responseData);
+    throw createHttpError.BadRequest('no email in payload')
     return;
   }
   const user = await dbConnection.findUserByEmail(email);

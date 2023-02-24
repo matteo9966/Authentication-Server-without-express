@@ -10,7 +10,7 @@ const INVALID_REFRESH =
   "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c";
 
 export const MOCK_USER: IUserLoginResponse = {
-  email: "test@test.ti",
+  email: "test1@test.ti",
   id: "random-id",
   roles: ["ADMIN"],
   username: "some-random-username",
@@ -18,8 +18,7 @@ export const MOCK_USER: IUserLoginResponse = {
 
 export const MOCK_BAD_LOGIN_USER: loginRequest = { email: "", password: "" };
 export const MOCK_GOOD_LOGIN_USER: loginRequest = {
-  email: "test@test.it",
-  password: "Secret1",
+  "email":"test@test.it","password":"Secret1"
 };
 export const MOCK_BAD_SIGNUP_USER: IUserSignup = {
   email: "",
@@ -28,11 +27,19 @@ export const MOCK_BAD_SIGNUP_USER: IUserSignup = {
   roles: [],
 };
 
-export const createGoodSignupUser:()=> IUserSignup =()=>({
+export const createGoodSignupUser: () => IUserSignup = () => ({
   email: `${Math.random().toString(36).slice(2)}@test.it`,
   password: `Secret11`,
   username: `${Math.random().toString(36).slice(2)}`,
   roles: ["USER"],
+});
+
+export const MOCK_EXISTING_EMAIL_VERIFY = {
+  email: "test@test.it",
+};
+
+export const createRandomEmailSignupPayload = () => ({
+  email: `${Math.random().toString(36).slice(2)}@email.it`,
 });
 
 // export const getGoodSignupUserResponse:(user:IUserSignup)=>IUserLoginResponse = (user)=>{
@@ -60,4 +67,8 @@ export function postLogin(): supertest.Test {
 
 export function postSignup(): supertest.Test {
   return request.post(`${endpoints.BASE}${endpoints.SIGNUP_URL}`);
+}
+
+export function postVerifyEmailSignup(): supertest.Test {
+  return request.post(`${endpoints.BASE}${endpoints.VERIFY_EMAIL_URL}`);
 }

@@ -34,7 +34,7 @@ dotenv.config();
 const environment = process.env.NODE_ENV?.trim();
 
 if (environment != "dev") {
-  console.log = () => {};
+  // console.log = () => {};
 }
 
 const port =

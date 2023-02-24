@@ -2,6 +2,13 @@ import { JsonDB, Config } from "node-json-db";
 import { DBFood } from "../../models/DbFood.interface";
 import { DbUser } from "../../models/DbUser.interface";
 import { DatabaseModel } from "../model/database.model";
+import crypto from 'crypto';
+
+const hashEmail = (email:string)=>{
+ return crypto.createHash('md5').update(email).digest('hex');
+}
+
+
 import _ from 'lodash'
 export class JSONDB implements DatabaseModel {
   config!: Config;
@@ -36,9 +43,13 @@ export class JSONDB implements DatabaseModel {
   }
 
   async getUserByEmail(email: string): Promise<DbUser | null> {
+
+    //create an hash from the email and use it as the key
+    const emailHash = hashEmail(email)
     try {
-      const user = await this.db.getData(`${this.userBase}/${email}`);
-      return user;
+      console.log(`LOOKING FOR: ${this.userBase}/${emailHash}`) // fare il replace di . con __dot__ quando lo salvi nel db
+      const users = await this.db.getData(`${this.userBase}/${emailHash}`.trim().toLowerCase());
+      return users;
     } catch (error) {
       console.log(error);
       return null;
@@ -47,7 +58,8 @@ export class JSONDB implements DatabaseModel {
 
   async saveUser(user: DbUser) {
     const email = user.email;
-    this.db.push(`${this.userBase}/${email}`, user); //ordino per email
+    const emailHash = hashEmail(email)
+    this.db.push(`${this.userBase}/${emailHash}`, user); //ordino per email
   }
 
   async updateUser(user: DbUser) {}
