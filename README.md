@@ -6,6 +6,12 @@ You can find the implementation of the pattern inside the folder "Pipeline"
 
 This server was created for the course Angular Security - from angular university
 
+
+### This project works whit the angular security course, use that repository together with this one.
+
+
+# 
+
 # Branches
 
 - user-jwt : server uses jwt as a way to authenticate the user
