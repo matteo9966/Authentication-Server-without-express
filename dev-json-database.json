@@ -8,6 +8,33 @@
                 "USER"
             ],
             "username": "userTest"
+        },
+        "d8f8c92605cd87378edfa7ea628b2740": {
+            "email": "ada@ada.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$r3UioC+0L9rpPAXT4kiw5g$2tzaJxv7CsqSuWLtE587p6XTGV6b1Y92k7fZkKyDxCI",
+            "id": "mlna3prw8cs",
+            "roles": [
+                "USER"
+            ],
+            "username": "user_f7an6bv7gxv"
+        },
+        "88a7272a9a6a02dc9ad21c1cdec6e9de": {
+            "email": "m@m.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$wav5wZi0fNWDFfFMbsrQrw$jrQMbakZMWmwZr2hYWhNuHZhe5uq80TgUDwsVesEMVY",
+            "id": "0f3bfd4y9it",
+            "roles": [
+                "USER"
+            ],
+            "username": "user_s7lq2fgu88e"
+        },
+        "839531d0faa3e6efb8d874dd74a8e530": {
+            "email": "admin@admin.admin",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$739HXavqW7kfVLrlH4Mayw$F2ip72/KsajE6DonfvjTQdTGtzuJvAb/p4nt/RjExNA",
+            "id": "1alduchsg0g",
+            "roles": [
+                "ADMIN"
+            ],
+            "username": "superadmin"
         }
     }
 }

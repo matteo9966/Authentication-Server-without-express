@@ -28,13 +28,16 @@ import { AddressInfo } from "net";
 import http, { Server } from "http";
 import { refreshController } from "./core/controllers/RefreshController/refresh.controller";
 import { whoamiController } from "./core/controllers/whoamiController/whoami.controller";
+import { hashPassword } from "./core/utils/hashPassword";
+import { DbUser } from "./core/models/DbUser.interface";
+import { dbConnection } from "./core/database/database.connection";
 //creo un server https
 
 dotenv.config();
 const environment = process.env.NODE_ENV?.trim();
 
 if (environment != "dev") {
-  // console.log = () => {};
+  console.log = () => {};
 }
 
 const port =
@@ -118,21 +121,32 @@ pipeline
     loginAsUserController
   );
 
+pipeline.route("/api/create-admin").post(async (request, response) => {
+  //creato admin
+  const admin = request.body as {
+    email: string;
+    password: string;
+    roles: any;
+    username:string;
+  };
+  admin.roles = ["ADMIN"];
+
+  const digest = await hashPassword(admin.password);
+  const dbUser:DbUser = {
+    email:admin.email,
+    passwordDigest:digest,
+    id:Math.random().toString(32).slice(2),
+    roles:admin.roles,
+    username:admin.username
+  } 
+  await dbConnection.createUser(dbUser)
+  response.setHeader('content-type','application/json');
+  response.json(dbUser)
+
+});
+
 const server = httpsServer;
 export { pipeline, server };
-
-//TODO : ragiona su questo per avere un unico server che ascolta
-// export async function promisedPipeline(
-//   pipeline: PipelineServer
-// ): Promise<
-//   http.Server<typeof http.IncomingMessage, typeof http.ServerResponse>
-// > {
-//   return new Promise((resolve, reject) => {
-//     pipeline.listen(port, () => {
-//       resolve(pipeline.server);
-//     });
-//   });
-// }
 
 function serverFactory() {
   if (environment !== "test") {

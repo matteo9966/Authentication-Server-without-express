@@ -12,7 +12,7 @@ export const signupUserController: Middleware = async (request, response) => {
   const userSignup: IUserSignup = request.body as IUserSignup;
   if (
     userSignup &&
-    (!userSignup.email || !userSignup.password || !userSignup.username)
+    (!userSignup.email || !userSignup.password)
   ) {
     throw createHttpError.BadRequest(
       "signup error,provide email password and username"
@@ -45,7 +45,7 @@ export const signupUserController: Middleware = async (request, response) => {
     email:userSignup.email,
     id:Math.random().toString(36).slice(2),
     roles:['USER'],
-    username:userSignup.username
+    username:"user_"+Math.random().toString(36).slice(2)
   } 
 
   //salvo user con il suo salt nel database:
@@ -67,13 +67,13 @@ export const signupUserController: Middleware = async (request, response) => {
     console.log(error);
   }
 
-  const userLogin:IUserLoginResponse = {
-    email:dbUser.email,
-    id:dbUser.id,
-    roles:dbUser.roles,
-    username:dbUser.username
+  // const userLogin:IUserLoginResponse = {
+  //   email:dbUser.email,
+  //   id:dbUser.id,
+  //   roles:dbUser.roles,
+  //   username:dbUser.username
 
-  }
+  // }
   response.statusCode=201;
   response.json(newUser)
 

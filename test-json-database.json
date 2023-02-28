@@ -269,6 +269,24 @@
                 "USER"
             ],
             "username": "6xz4d137duv"
+        },
+        "4795baad35422d7d983d7d99702a5228": {
+            "email": "79jlyeu964e@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$Ts7jzppb7KNgv4+FcbTcbw$UMuMgWyXtj07FCj7cywlUs32PEb7g+vCdCDRVqYuC4o",
+            "id": "vyb9aq4p0zg",
+            "roles": [
+                "USER"
+            ],
+            "username": "kwar3tknigg"
+        },
+        "24053fc4b5b24229809d30e409ca30a6": {
+            "email": "mn2ca40okm@test.it",
+            "passwordDigest": "$argon2id$v=19$m=65536,t=3,p=4$ipvDPJvU+TFJqpyVAuO/8g$8pqtaebsMGw4voyym2tuj8n31kHKPEgmI7KnHu51G54",
+            "id": "pltv9vilpyj",
+            "roles": [
+                "USER"
+            ],
+            "username": "user_7613p18o25l"
         }
     }
 }
